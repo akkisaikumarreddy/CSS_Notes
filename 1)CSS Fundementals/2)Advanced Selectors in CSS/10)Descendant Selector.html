@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Style - Descendant Selector</title>
+
+    <style type="text/css">
+
+        div p {
+            color: darkgreen;
+            font-style: italic;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Descendant Selector</h1>
+
+    <p>The Descendant Selector in CSS is used to style elements that are nested inside (descendants of) another element.<br>
+        It’s written as a space between two selectors.
+    </p>
+
+    <p><strong>Syntax :</strong></p>
+
+    <pre>
+    <code>
+    parent descendant {
+    property: value;
+    }
+    </code>
+    </pre>
+
+    <p>This paragraph is outside the div (not styled).</p>
+
+    <div>
+
+        <p>This paragraph is inside the div (styled).</p>
+
+        <section>
+            <p>This paragraph is inside a section, which is inside the div (still styled).</p>
+        </section>
+
+    </div>
+    
+</body>
+
+</html>

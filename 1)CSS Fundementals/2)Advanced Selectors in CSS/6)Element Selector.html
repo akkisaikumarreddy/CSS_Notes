@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Style - Element Selector</title>
+
+    <style type="text/css">
+
+        div {
+            background-color: bisque;
+            border: 3px;
+            padding: 15px;
+            margin: 20px;
+            width: 60%;
+        }
+
+        div p {
+            color: limegreen;
+            font-size: 15px;
+        }
+
+        body > h1 {
+            color: chocolate;
+            font-size: 20px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Element Selector</h1>
+
+    <p>The Element Selector in CSS is the simplest and most commonly used selector.<br>
+        It targets HTML elements directly by their tag name and applies styles to all instances of that element in the document.
+    </p>
+
+    <p><strong>Syntax :</strong></p>
+
+    <pre>
+    <code>
+    
+    element {
+        property : value;
+    }
+
+    </code>
+    </pre>
+
+    <div>
+
+        <h1>I am going to apply style to div element with color, background-color.</h1>
+
+        <p>This paragraph is styled using the element selector.</p>
+        <p>I'm going to apply color and change font-size to paragraphs which are inside div element not outside ones.</p>
+
+    </div>
+    
+</body>
+
+</html>
