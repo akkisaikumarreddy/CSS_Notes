@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - Adjacent sibling</title>
+
+    <style type="text/css">
+
+        ul+h4 {
+            border: 3px solid blue;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Adjacent Sibling Selector</h1>
+
+    <h4> Full Stack Development</h4>
+
+    <p><strong><u>Adjacent Sibling Selector :</u></strong> It selects all the elements that are adjacent siblings of specified elements.<br>
+        It selects the second element if it immediately follows the first element. </p>
+    <p>In this example It selects ul tags that immediately follow the h4 tag.</p>
+
+    <ul>
+        <li>python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <h4>Coding</h4>
+
+    <h4>Timing</h4>
+
+    <p>Here i gave 3 h4 tags but the style applied to the next  adjacent h4 tag to the ul tag</p>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CSS - Color and Background</title>
+
+    <style>
+        body {
+            color: darkblue;  /* text color */
+            background-color: lightyellow;  /* background color of webpage */
+            font-family: Arial, sans-serif;   /*A font family is a group of matching fonts that look similar, like Arial, Arial Bold, and Arial Italic.*/
+            line-height: 1.6;    /*the height of a line box */
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkred;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        p {
+            color: green;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        strong {
+            color: darkblue;
+        }
+
+        /* box-model section */
+        .box-model{
+            border: 3px solid darkred;    /* border around the box */
+            padding: 20px;                  /* space inside the box */
+            margin: 30px auto;              /* space outside the box */
+            background-color: whitesmoke;    /* light background for the contrast */
+            width: 80%;                     /* box width */
+            border-radius: 8px;             /* rounded corners */
+        }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Exploring CSS Colors</h1>
+
+    <p>
+        This page shows how simple <strong>color styling</strong> can change the look of a webpage. 
+        The background is light yellow, which makes the text stand out clearly.
+    </p>
+
+    <p>
+        Headings are styled in dark red to grab attention, while the main text uses dark blue for readability. 
+        Paragraphs are highlighted in green to add variety and balance.
+    </p>
+
+    <p>
+        By combining <strong>background-color</strong> with <strong>text color</strong>, 
+        you can create attractive designs without needing images or complex layouts.
+    </p>
+
+    <!-- Box model section -->
+
+    <div class="box-model">
+
+        <h2>CSS Box Model</h2>
+
+        <p>
+            The <strong>Box Model</strong> in CSS describes how every element is treated as a rectangular box. 
+            It consists of:
+        </p>
+
+        <ul>
+            <li><strong>Margin:</strong> Space outside the element, separating it from others.</li>
+            <li><strong>Border:</strong> The visible outline around the element.</li>
+            <li><strong>Padding:</strong> Space between the content and the border.</li>
+            <li><strong>Content:</strong> The actual text or image inside the box.</li>
+        </ul>
+
+        <p>
+            In this example, the box has a dark red border, 20px padding inside, and 30px margin outside. 
+            This makes the content neatly separated and visually clear.
+        </p>
+
+    </div>
+
+</body>
+</html>

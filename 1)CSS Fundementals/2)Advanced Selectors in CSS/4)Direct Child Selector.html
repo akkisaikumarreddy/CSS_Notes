@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Style - Direct Child Selector</title>
+
+    <style>
+        div>span{
+            background-color: cadetblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Direct Child Selector</h1>
+
+    <p>In CSS, the child combinator (&gt;) selects only the immediate (first-level) children of a parent element., and it is represented by the greater-than symbol (&gt;). <br>
+        It selects only the elements that are immediate, first-level children of a specified parent element
+    </p>
+    
+    <div>
+        <span>This text is inside div and inside span</span>
+        <p>This  text is inside div but not inside span. <br>
+            <span>This text is inside div and inside p</span>
+        </p>
+    </div>
+
+    <span>This span text is not inside div</span>
+    
+    <p><strong>Syntax:</strong></p>
+
+    <pre>
+    <code>
+    parent > child {
+    /* styles */
+    }
+    </code>
+    </pre>
+
+</body>
+
+</html>

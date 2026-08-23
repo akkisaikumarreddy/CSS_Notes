@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Fundamentals</title>
+
+</head>
+
+<body>
+
+    <h1 style="text-align:center;">CSS Fundamentals</h1>
+
+    <p>
+        CSS stands for Cascading Style Sheets.<br>
+        It is a stylesheet language used to enhance (improve quality, performance, value, and user experience) of a webpage.
+    </p>
+    <ul>
+        <li><strong>HTML :</strong> Adds structure to the webpage.</li>
+        <li><strong>CSS :</strong> Adds style and makes it visually appealing.</li>
+        <li><strong>JavaScript :</strong> Adds interactivity and logic to the page.</li>
+    </ul>
+
+    <p>
+        <strong>CSS</strong> was released in 1996, invented by <b><i>Hakon Wium Lie</i></b>, three years after HTML (1993).<br>
+        The main idea is that it allows the separation of content (HTML) from presentation (CSS).<br>
+        This makes websites easier to maintain and more flexible.
+    </p>
+
+    <hr>
+
+    <h2>CSS Introduction</h2>
+
+    <p>
+        <b>CSS (Cascading Style Sheets)</b> is a language designed to simplify the process of making webpages presentable.<br>
+        It allows you to apply style to <b>HTML</b> documents by prescribing colors, fonts, spacing, and positioning.<br>
+        <b>HTML</b> uses tags, while <b>CSS</b> uses rule sets.<br>
+        <b>CSS</b> styles are applied to <b>HTML</b> using <strong><q>Selectors</q></strong>.<br>
+        CSS follows a hierarchy → inline, internal, external styles.<br>
+        Specificity decides which selectors have more weight.<br>
+        Later rules override earlier ones if they have equal priority.
+    </p>
+
+    <h3>Key Features:</h3>
+    <ul>
+        <li><strong>Cascading :</strong> Styles can come from multiple sources, and the browser decides which one wins based on priority.</li>
+        <li><strong>Selectors :</strong> Powerful patterns to target specific elements (by tags, id, class, etc.).</li>
+        <li><strong>Responsive Design :</strong> CSS makes websites look good on mobiles, tablets, and desktops.</li>
+        <li><strong>Reusability :</strong> One stylesheet can control hundreds of pages.</li>
+    </ul>
+
+    <i><u><p>Here is an example of how CSS styles are applied to HTML (Internal CSS example):</p></u></i>
+    <pre>
+    <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First Styled Page&lt;/title&gt;
+        &lt;style&gt;
+            body {
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+            }
+            h1 {
+                color: #258D46;
+                font-size: 48px;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            }
+            p {
+                color: #D35400;
+                font-size: 20px;
+                line-height: 1.6;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to CSS&lt;/h1&gt;
+        &lt;p&gt;This is a beautifully styled paragraph using CSS.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code>
+    </pre>
+
+    <hr>
+
+    <h2>CSS Syntax</h2>
+    <p>
+        CSS syntax defines how CSS rules are written so that browsers can interpret and apply them to HTML elements.
+    </p>
+
+    <p style="text-align:center;">
+        <img src="CSS Syntax.png" alt="css syntax" width="600" height="280">
+    </p>
+
+    <ul>
+        <li><strong>Selector :</strong> Targets the HTML elements, e.g., 'h<sub>1</sub>' to apply styles.</li>
+        <li><strong>Declaration Block :</strong> Enclosed in curly braces { } containing one or more declarations.</li>
+        <li><strong>Property :</strong> Specifies the style attribute, e.g., "color".</li>
+        <li><strong>Value :</strong> Defines the property setting, e.g., "blue".</li>
+        <li><strong>Overall Structure :</strong> Forms a complete CSS rule → h<sub>1</sub> { color: blue }, styling h<sub>1</sub> headings blue.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Adding CSS to HTML - 3 Approaches</h2>
+    <p>
+        Each method serves a different purpose based on how you organize and manage your styles.
+    </p>
+    <ul>
+        <li>Helps structure CSS according to project needs.</li>
+        <li>Makes code easier to maintain and update.</li>
+        <li>Allows flexibility in applying styles to different parts of a webpage.</li>
+        <li>Improves readability and reusability of design.</li>
+    </ul>
+
+    <h3>1. Inline CSS</h3>
+    <p>Inline CSS applies styles directly within HTML tags using the style attribute.</p>
+    <pre>
+    <code>
+    &lt;h2 style="color: green;"&gt;
+        Welcome to 
+        &lt;i style="color: green;"&gt;GeeksforGeeks&lt;/i&gt;
+    &lt;/h2&gt;
+    </code>
+    </pre>
+
+    <h3>2. Internal CSS</h3>
+    <p>Internal CSS involves adding styles inside &lt;style&gt; tags within the HTML file.</p>
+    <pre>
+    <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Internal CSS&lt;/title&gt;
+        &lt;style&gt;
+            h2 {
+                color: green;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h2&gt;Welcome to GeeksforGeeks&lt;/h2&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code>
+    </pre>
+
+    <h3>3. External CSS</h3>
+    <p>External CSS uses a separate .css file linked with the &lt;link&gt; tag.</p>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>HTML File</th>
+            <th>CSS File</th>
+        </tr>
+        <tr>
+            <td>
+                <pre>
+                <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;External CSS&lt;/title&gt;
+                    &lt;link rel="stylesheet" href="style.css"&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h2&gt;Welcome to GeeksforGeeks&lt;/h2&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code>
+                </pre>
+            </td>
+            <td>
+                <pre>
+                <code>
+                /* style.css */
+                h2 {
+                    color: green;
+                    font-size: 20px;
+                }
+                </code>
+                </pre>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>CSS Rule Set</h2>
+
+    <p>A CSS ruleset is the foundation of how styles are applied to HTML elements on a web page. It consists of a selector and one or more declarations, which define how elements are displayed.</p>
+
+    <h3>Color and Background</h3>
+
+    <p>The declaration block to style the body of an element can be written by keeping body as a selector and the declaration must be kept within these {} braces.</p>
+
+    <pre>
+    <code>
+
+&lt;head&gt;
+
+    &lt;style&gt;
+        body {
+            color: darkblue;        /* for text color */
+            background-color: lightyellow;      /* solid background color */
+            background-image: url('Images/Luffy.jpg');      /*replace with your image */
+            background-repeat: repeat-x;          /* repeats left to right */
+            background-size: auto;               /* image covers full page */
+            background-position: top;          /* image centered */
+        }
+        h1 {
+            color: darkred; /* heading text color */
+        }
+        p {
+            color: green;   /* paragraph text color */
+        }
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1>Welcome to My Styled Page&lt;/h1&gt;
+
+    &lt;img src="Images/Ichigo(1).jpg" alt="ichigo">
+
+    &lt;p&gt;
+        This page demonstrates how CSS can style a webpage. 
+        The text is black for good readability, while the background image 
+        adds visual interest behind the content.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+    </code>
+    </pre>
+
+    <h2>2. Font and Text</h2>
+
+    <p>The declaration block to style the h1 element by using an element selector.</p>
+
+    <pre>
+    <code>
+    
+    &lt;head&gt;
+        &lt;style&gt;
+            body {
+                color: darkblue;  /* text color */
+                background-color: lightyellow;  /* background color of webpage */
+                font-family: Arial, sans-serif;   /*A font family is a group of matching fonts that look similar, like Arial, Arial Bold, and Arial Italic.*/
+                line-height: 1.6;    /*the height of a line box */
+                margin: 20px;
+            }
+
+            h1 {
+                color: darkred;
+                text-align: center;
+                font-size: 36px;
+            }
+
+            p {
+                color: green;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            strong {
+                color: darkblue;
+            }
+        &lt;/style&gt;
+
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+        &lt;h1&gt;Exploring CSS Colors&lt;/h1&gt;
+
+        &lt;p&gt;
+            This page shows how simple <strong>color styling</strong> can change the look of a webpage. 
+            The background is light yellow, which makes the text stand out clearly.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            Headings are styled in dark red to grab attention, while the main text uses dark blue for readability. 
+            Paragraphs are highlighted in green to add variety and balance.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            By combining <strong>background-color</strong> with <strong>text color</strong>, 
+            you can create attractive designs without needing images or complex layouts.
+        &lt;/p&gt;
+
+    &lt;/body&gt;
+   
+    </code>
+    </pre>
+
+    <h2>3. Box Model (Margin, Padding, Border)</h2>
+
+    <p>The box model describes the structure of an element as a rectangular box consisting of content, padding, border, and margin.</p>
+
+    <pre>
+    <code>
+     /* box-model section */
+        .box-model{
+            border: 3px solid darkred;    /* border around the box */
+            padding: 20px;                  /* space inside the box */
+            margin: 30px auto;              /* space outside the box */
+            background-color: whitesmoke;    /* light background for the contrast */
+            width: 80%;                     /* box width */
+            border-radius: 8px;             /* rounded corners */
+        }
+    </code>
+    </pre>
+
+    <h2></h2>
+
+</body>
+
+</html>

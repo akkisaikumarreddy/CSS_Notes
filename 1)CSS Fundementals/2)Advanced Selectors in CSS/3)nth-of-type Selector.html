@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Style - nth-of-type Selector</title>
+
+    <style type="text/css">
+
+        ul:nth-of-type(2) {
+            background-color: yellow;
+        }
+
+        li:nth-of-type(even) {
+            color: orangered;
+        }
+
+        ul:nth-of-type(odd) {
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>nth-of-type Selector</h1>
+
+    <p> It selects an element from its position and types.</p>
+
+    <ul>
+        <li>java</li>
+        <li>python</li>
+        <li>C++</li>
+    </ul>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PHP</li>
+    </ul>
+    <ul>
+        <li>C#</li>
+        <li>R</li>
+        <li>Matlab</li>
+    </ul>
+    
+    <p><strong>Syntax:</strong></p>
+
+    <pre>
+    <code>
+    <i>Select a particular number tag to make changes.</i>
+
+    div:nth-of-type(5) {
+      background: purple;
+    }
+    </code>
+    </pre>
+
+    <pre>
+    <code>
+    <i>If we want to make changes in all even li.</i>
+
+    li:nth-of-type(even) {
+      background: yellow;
+    }
+    </code>
+    </pre>
+
+</body>
+
+</html>
