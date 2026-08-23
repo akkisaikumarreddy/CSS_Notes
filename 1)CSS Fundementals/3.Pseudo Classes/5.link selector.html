@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - link selector</title>
+
+    <style type="text/css">
+
+        a:link {
+            color: darkblue;  /* unvisited links */
+        }
+
+        a:visited {
+            color: purple;    /* visited links */
+        }
+
+        a:hover {
+            color: red;        /* when hovered */
+        }
+
+        a:active {
+            color: green;       /* when clicked */
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> :link selector</h1>
+
+    <p>
+        The :link selector in CSS is a pseudo-class used to style links (&lt;a&gt; elements) that have not yet been visited.<br>
+        It’s the opposite of :visited, and it applies only to hyperlinks with an href attribute.
+    </p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    a:link {
+    property: value;
+    }
+    </code>
+    </pre>
+
+    <h2> :link selector demo</h2>
+
+    <p><a href="https://www.google.com">Google</a></p>
+    <p><a href="https://www.wikipedia.org">Wikipedia</a></p>
+    <p><a href="https://www.microsoft.com">Microsoft</a></p>
+    
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - Visited selector</title>
+
+    <style type="text/css">
+
+        h1 {
+            text-align: center;
+        }
+
+        a{
+            color: darkblue;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        a:visited{
+            color: purple;  /* visited links turn purple */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1> :visited selector</h1>
+
+    <p>
+        The <b>:visited selector</b> in CSS is a pseudo-class used to style links (&lt;a&gt; elements) that the user has already visited. <br>
+        It gives visual feedback about which pages have been clicked before.
+    </p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    a:visited {
+    property: value;
+    }
+    </code>
+    </pre>
+
+    <h2> :visited selector demo </h2>
+
+    <p><a href="https://www.google.com" target="_blank">Google</a></p> 
+
+    <p><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a></p>
+
+    <p><a href="https://www.microsoft.com" target="_blank">Microsoft</a></p>
+
+</body>
+
+</html>

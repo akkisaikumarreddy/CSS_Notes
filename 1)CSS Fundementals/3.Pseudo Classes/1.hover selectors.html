@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - hover selectors</title>
+
+    <style type="text/css">
+
+        .a:hover {
+            color: white;
+            background-color: green;
+            width: 75%;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            padding: 15px;
+            padding-left: 50px;
+            color: white;
+            background-color: green;
+            display: none;
+        }
+
+        h3:hover + div {
+            display: block;
+        }
+
+        .b {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .b:hover {
+            color: red;
+        }
+
+        .c:hover {
+            font-family: monospace;
+        }
+
+        .d:hover {
+            text-decoration: underline solid red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">hover selectors</h1>
+
+    <p>
+        The <strong><big>:hover selector</big></strong> in CSS is a pseudo-class that applies styles to an element when the user hovers over it with a mouse pointer (or similar pointing device).<br>
+        It’s commonly used to make interactive effects like highlighting links, buttons, or images.
+    </p>
+
+    <p><strong>Syntax:</strong></p>
+    <pre>
+    <code>
+    selector:hover {
+    property: value;
+    }
+    </code>
+    </pre>
+
+    <p class="a">changing background color on hover.</p>
+
+    <hr>
+
+    <h3 style="text-align: center;">hover to see hidden HTML:</h3>
+
+    <div>Hyper Text Markup Language is the standard language for creating and structuring web pages using tags and elements. </div>
+
+    <hr>
+
+    <p>Changing font color on hover.</p>
+
+    <p class="b">hover it</p>
+
+    <hr>
+
+    <p>Changing Font family on hover.</p>
+
+    <p class="c">hover it</p>
+
+    <hr>
+
+    <p>Adding underline on hover.</p>
+
+    <p class="d">hover it</p>
+    
+</body>
+
+</html>

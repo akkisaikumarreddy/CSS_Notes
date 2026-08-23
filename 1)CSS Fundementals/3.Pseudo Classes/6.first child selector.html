@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :first-child</title>
+
+    <style type="text/css">
+
+        p:first-child {
+            color: darkred;
+            font-weight: bold;
+        }
+
+        div p:first-child {
+            background-color: lightyellow;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> :first-child </h1>
+    
+    <h2> :first-child selector Demo</h2>
+
+    <p>This paragraph is the first child of body -> styled in dark red.</p>
+
+    <p>This paragraph is not first-child -> not styled.</p>
+
+    <div>
+
+        <p>This is the first child inside div -> styled with yellow color.</p>
+
+        <p>This is not first child inside div -> not styled.</p>
+
+    </div>
+
+    <pre>
+    The &lt;body&gt; starts with an &lt;h1&gt;, then an &lt;h2&gt;.
+
+    But the first &lt;p&gt; inside &lt;body&gt; is still considered the first child of its parent that is a &lt;p&gt; element.
+
+    Here’s the subtlety:
+
+    p:first-child means “select a &lt;p&gt; if it is the very first child of its parent.”
+
+    In your case, the &lt;body&gt; has &lt;h1&gt; as the first child, so the &lt;p&gt; is not the first child of &lt;body&gt;.
+
+    That’s why your comment in the HTML is misleading — that &lt;p&gt; is not the first child of &lt;body&gt;, so it shouldn’t be styled.
+    </pre>
+
+    <hr>
+
+    <p>
+        The :first-child selector in CSS is a pseudo-class that targets an element if it is the first child of its parent.<br>
+        It’s useful when you want to style only the very first element inside a container.
+    </p>
+
+    <p><b>Syntax:</b></p>
+
+    <pre>
+    <code>
+    parent child:first-child {
+    property: value;
+    }
+    </code>
+    </pre>
+
+</body>
+
+</html>

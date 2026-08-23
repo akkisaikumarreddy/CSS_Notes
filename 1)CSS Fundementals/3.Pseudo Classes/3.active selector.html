@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - active selector </title>
+
+    <style type="text/css">
+
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            color: darkblue;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        a:active {
+            color: white;
+            background-color: darkblue;
+        }
+
+        button {
+            background-color: lightblue;
+            border: 2px solid darkblue;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: skyblue;
+        }
+
+        b:active {
+            background-color: darkblue;
+            color: white;
+            transform: scale(0.95);  /* slight shrink effort */
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1> :active selector</h1>
+
+    <p>
+        The :active selector in CSS is a pseudo-class that applies styles to an element when it is being actively clicked or pressed by the user.<br>
+        It’s often used with links and buttons to give immediate feedback during interaction.
+    </p>
+
+    <p><strong>Syntax:</strong></p>
+
+    <pre>
+    <code>
+    selector:active {
+    property: value;
+    }
+    </code>
+    </pre>
+
+    <p>Click and hold this <a href="https://github.com/" target="_blank">GitHUB Link</a> to see the active effort</p>
+
+    <button>Click and hold me</button>
+    
+</body>
+
+</html>
