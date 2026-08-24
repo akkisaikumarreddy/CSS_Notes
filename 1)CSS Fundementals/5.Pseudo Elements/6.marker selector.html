@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - ::marker</title>
+
+    <style>
+
+        li::marker{
+            color: darkblue;
+            font-size: 1.5em;
+        }
+
+        .a li::marker{
+            content: "✔ ";
+            color: orange;
+        }
+
+        ol li::marker{
+            color: crimson;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">::marker</h1>
+
+    <p>
+        The ::marker pseudo-element in CSS lets you style the bullet, number, or marker of list items (&lt;li&gt;).<br>
+        By default, browsers render bullets or numbers in a standard way, but with ::marker you can change their color, size, font, or even replace them with custom symbols.
+    </p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    li::marker {
+        /* styles for list item markers */
+    }
+    </code>
+    </pre>
+
+    <h2>Change Bullets color and size</h2>
+    <ul>
+        <li>Resume</li>
+        <li>Interview</li>
+        <li>Job Search</li>
+    </ul>
+
+    <h2>Replace bullets with emojis</h2>
+
+    <ul class="a">
+        <li>Soft Skills</li>
+        <li>Communication</li>
+        <li>Teamwork</li>
+    </ul>
+
+    <h2>Style ordered list numbers</h2>
+
+    <ol>
+        <li>Register</li>
+        <li>Attend Session</li>
+        <li>Get Certificate</li>
+    </ol>
+
+    <hr>
+
+    <h3>Key Points</h3>
+    <ul>
+        <li>Works only on list items (&lt;li&gt; inside &lt;ul&gt; or &lt;ol&gt;).</li>
+        <li>You can style color, font, size, weight, and content.</li>
+        <li>content allows replacing the default marker with custom text or symbols.</li>
+        <li>Unlike ::before and ::after, ::marker is specifically tied to list markers.</li>
+    </ul>
+    
+</body>
+
+</html>
