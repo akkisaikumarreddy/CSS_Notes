@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - ::backdrop</title>
+
+    <style>
+
+        /* Style the dialog box itself */
+        dialog {
+            border: none;           /* Remove Default Border */
+            border-radius: 8px;     /* Rounded corners */
+            padding: 20px;          /* Space inside the box */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Soft Shadow around dialog */
+            text-align: center;
+            font-family: Arial, sans-serif;
+            width: 300px;
+            margin: 40px auto;   /* Adds vertical space before/after dialog */
+            display: block;      /* Ensures dialog behaves like a block element */
+        }
+
+        /* Style the background behind the dialog */
+        dialog::backdrop{
+            background: rgba(0,0,0,0.6);  /* Semi-transparent black overlay */
+            /* you could also use or images here. */
+        }
+
+        /* Style for the button inside the dialog */
+        button {
+            padding: 10px 20px;            /* Space inside button */
+            border: none;                  /* Remove default border */
+            border-radius: 4px;            /* Rounded corners */
+            background: #0077b6;           /* Blue background */
+            color: white;                  /* White text */
+            font-weight: bold;             /* Bold text */
+            cursor: pointer;               /* Pointer cursor on hover */
+        }
+
+        /* Hover effect for button */
+        button:hover {
+            background: #00b4d8;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">::backdrop</h1>
+    
+    <p>
+        The ::backdrop pseudo-element in CSS is used to style the background layer behind elements that are displayed in fullscreen mode (like when you use the Fullscreen API with element.requestFullscreen()).<br>
+        It lets you control how the dimmed background looks when an element takes over the screen.
+    </p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    ::backdrop {
+        /* styles for the fullscreen backdrop */
+    }
+    </code>
+    </pre>
+
+    <h2>Job Searching Sessions</h2>
+    <p>Click button on top of the dialog box</p>
+
+    <!-- Dialog Element -->
+    <dialog open>
+        <h3>Registration info</h3>
+        <p>Seats are limited! Register soon</p>
+        <button>Close</button>
+    </dialog>
+
+    <br clear="all">
+    <hr>
+
+    <h3>Explanation</h3>
+
+    <ul>
+        <li><b>dialog styles -></b> control the look of the modal box itself (rounded, shadow, padding).</li>
+        <li><b>dialog::backdrop -></b> controls the background overlay behind the dialog (dark semi-transparent layer).</li>
+        <li><b>Button styles -></b>make the button inside the dialog look modern, with hover effects.</li>
+    </ul>
+
+    <h3>Kwy Points :</h3>
+
+    <ul>
+        <li>::backdrop only applies when an element is in fullscreen mode.</li>
+        <li>You can style background, color, filters, etc.</li>
+        <li>It doesn’t affect normal page layout — only the fullscreen overlay.</li>
+        <li>Commonly used for videos, images, or modal dialogs that use fullscreen.</li>
+    </ul>
+
+</body>
+
+</html>

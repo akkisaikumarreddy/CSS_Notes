@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - spelling-error for Error Handling</title>
+
+    <style>
+
+        /* Styling misspelled words */
+        ::spelling-error {
+            text-decoration: underline wavy red;
+            background-color: #ffe6e6;
+        }
+
+        /* Style grammar errors separately */
+        ::grammar-error {
+            text-decoration: underline wavy orange;
+        }
+
+        textarea {
+            width: 400px;
+            height: 120px;
+            font-size: 16px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1 style="text-align: center;">::spelling-error for Error Handling</h1>
+
+    <p>
+        The ::spelling-error pseudo-element in CSS is part of the Error Handling selectors. It allows you to style text that the browser has flagged as a spelling mistake (for example, when the user types into an input or editable area and the browser’s spellchecker detects an error).
+    </p>
+    
+    <p><b>Syntax :</b></p>
+    <pre>
+    <code>
+    ::spelling-error {
+        /* styles for misspelled text */
+    }
+    </code>
+    </pre>
+
+    <h2>Spelling check Demo</h2>
+    <p>Type into the box below. If your browser's spellchecker is enabled, misspelled words will be styled with the `::spelling-error` style.</p>
+
+    <textarea spellcheck="true">thiss is an exampel with speling erors</textarea>
+
+
+    <br clear="all">
+    <hr>
+
+    <h3>Key Points :</h3>
+    <ul>
+        <li>Works only when the browser’s spellcheck feature is active (spellcheck="true" on inputs or textarea).</li>
+        <li>::spelling-error styles misspelled words.</li>
+        <li>::grammar-error styles grammar mistakes.</li>
+        <li>Common styles: text-decoration: underline wavy red; or background highlights.</li>
+        <li>Support varies by browser (Chrome, Edge, Safari support it; Firefox has partial support).</li>
+    </ul>
+
+</body>
+
+</html>

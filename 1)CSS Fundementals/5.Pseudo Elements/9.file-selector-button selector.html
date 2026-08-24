@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>::file-selector-button for Media and Interactivity</title>
+
+    <style>
+        /* Style the file input button */
+        input[type="file"]::file-selector-button {
+            background: #0077b6;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;  /*rounded corners */
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        /* Hover effort */
+        input[type="file"]::file-selector-button:hover {
+            background: #00b4d8;
+        }
+
+        /* optional : Style the input field itself */
+        input[type="file"] {
+            font-family: Arial, sans-serif;
+            margin: 10px 0;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">::file-selector-button</h1>
+
+    <p>
+        The ::file-selector-button pseudo-element in CSS lets you style the button part of an &lt;input type="file"&gt;.<br>
+        Normally, browsers render this button in their default style (like "Choose File"), but with ::file-selector-button you can customize its look to match your design.
+    </p>
+
+    <p><b>Syntax :</b></p>
+    <pre>
+    <code>
+    input[type="file"]::file-selector-button {
+        /* styles for the file input button */
+    }
+    </code>
+    </pre>
+
+    <h2>Upload your media files</h2>
+    <p>Select audio, video, or PDF files:</p>
+
+    <!-- File input for media -->
+    <input type="file" accept="audio/*,video/*,.pdf">
+
+    <hr>
+
+    <h3>How it works :</h3>
+    <ul>
+        <li>The button part of the file input is styled with custom colors, padding, and hover effects.</li>
+        <li>The accept attribute restricts uploads to audio, video, or PDF files.</li>
+        <li>The rest of the input field remains standard, but you can style it separately if needed.</li>
+    </ul>
+
+    <h3>Key Points :</h3>
+    <ul>
+        <li>::file-selector-button works only on &lt;input type="file"&gt;.</li>
+        <li>You can style background, color, padding, border, font, hover effects.</li>
+        <li>It gives you control over the otherwise browser-default "Choose File" button.</li>
+        <li>Useful for making file upload inputs match your site’s design.</li>
+    </ul>
+    
+</body>
+
+</html>
