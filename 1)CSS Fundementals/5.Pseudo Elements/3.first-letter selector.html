@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - ::first-letter</title>
+
+    <style>
+        h2::first-letter{
+            color: red;
+            font-size: 150%;
+        }
+        p::first-letter{
+            color: blueviolet;
+            font-weight: 900;
+            font-style: italic;
+            background: wheat;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">::first-letter</h1>
+
+    <p>
+        The ::first-letter pseudo-element in CSS lets you style the very first letter of a block-level element (like a paragraph, heading, or div).<br>
+        It’s often used for decorative drop caps or emphasis.
+    </p>
+
+    <pre>
+    <code>
+    selector::first-letter {
+        /* styles for the first letter */
+    }
+    </code>
+    </pre>
+
+    <h2>Chapter 1</h2>
+
+    <p>Key points</p>
+
+    <ul>
+        <li>Works only on block-level elements (like &lt;p&gt;, &lt;h1&gt;, &lt;div&gt;).</li>
+        <li>Commonly used for drop caps in articles or books.</li>
+        <li>Can style font, color, size, background, etc.</li>
+        <li>Doesn’t apply to inline elements like &lt;span&gt; unless inside a block.</li>
+    </ul>
+
+    
+</body>
+
+</html>
