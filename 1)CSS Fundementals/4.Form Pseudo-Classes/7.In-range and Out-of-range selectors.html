@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - In-range and Out-of-range</title>
+
+    <style>
+
+        input:in-range{
+            border: 2px solid green;
+            background: #e6ffe6;
+        }
+
+        input:out-of-range{
+            border: 2px solid red;
+            background: #ffe6e6;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">:in-range and :out-of-range</h1>
+
+    <p>The :in-range and :out-of-range selectors in CSS are pseudo-classes that apply to form inputs when their values fall inside or outside the allowed range defined by attributes like min and max.</p>
+
+    <pre>
+    <code>
+    input:in-range {
+        /* styles when value is valid and within range */
+    }
+
+
+    input:out-of-range {
+        /* styles when value is invalid or outside range */
+    }
+    </code>
+    </pre>
+    
+    <h2>Range validation Example</h2>
+
+    <div align="center">
+        <form action="#" method="get">
+            <fieldset style="width: 400px;">
+
+                <legend>Range</legend>
+
+                <label for="age">Age :</label>
+                <input type="number" id="age" name="age" required min="18" max="60">   <br><br>
+                
+                <label for="score">Score (1-100):</label>
+                <input type="number" id="score" name="score" required min="0" max="100">  <br><br>
+
+                <button type="submit">Submit</button>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <p>How it works:</p>
+
+    <p><b>:in-range -></b>applies when the entered number is within the allowed range (min ≤ value ≤ max).</p>
+
+    <p><b>:out-of-range -></b>applies when the entered number is outside the allowed range.</p>
+
+    <hr>
+
+</body>
+
+</html>

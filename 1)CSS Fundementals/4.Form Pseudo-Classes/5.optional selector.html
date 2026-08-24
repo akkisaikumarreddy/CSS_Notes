@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CSS - :optional</title>
+
+    <style>
+
+        /* Style optional fields */
+        input:optional,
+        textarea:optional,
+        select:optional {
+            border: 2px solid green;
+            background: #e6ffe6;
+        }
+
+        /* Style required fields for contrast */
+        input:required,
+        textarea:required,
+        select:required {
+            border: 2px solidred;
+            background: #ffe6e6;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1 style="text-align: center;"> :optional </h1>
+
+    <p>The :optional selector in CSS is the counterpart to :required. It targets form fields that are not marked as required (i.e., they don’t have the required attribute).</p>
+
+    <pr>
+    <code>
+    selector:optional {
+        /* CSS styles here */
+    }
+    </code>
+    </pr>
+
+    <h2>OPtional vs Required fields</h2>
+
+    <div align="center">
+            
+    <form action="#" method="post">
+            <fieldset style="width: fit-content;">
+
+                <legend>Optional Vs Required Fields</legend>
+                <!-- Required input -->
+                <label for="name">Name (required):</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <!-- Optional input -->
+                <label for="nickname">Nickname (optional):</label>
+                <input type="text" id="nickname" name="nickname">
+                <br><br>
+
+                <!-- Required textarea -->
+                <label for="message">Message (required):</label>
+                <textarea id="message" name="message" required></textarea>
+                <br><br>
+
+                <!-- optional Textarea -->
+                <label for="message">Message (optional):</label>
+                <textarea id="message" name="message"></textarea>
+                <br><br>
+
+                <!-- Optional select -->
+                <label for="color">Favorite Color (optional):</label>
+                <select id="color" name="color">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Green</option>
+                </select>
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>

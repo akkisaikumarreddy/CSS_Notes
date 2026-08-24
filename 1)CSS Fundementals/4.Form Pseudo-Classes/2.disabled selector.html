@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :disabled</title>
+
+    <style>
+
+        input:disabled,
+        textarea:disabled,
+        button:disabled,
+        select:disabled {
+            background: lightgray;
+            color: darkred;
+            border: 1px solid #999;
+            cursor: not-allowed;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1 style="text-align: center;">:disabled</h1>
+
+    <p>The :disabled selector in CSS is a pseudo-class that targets form elements that are disabled (not available for user interaction).<br>
+        It applies to inputs, textareas, buttons, selects, etc.
+    </p>
+
+    <p><strong>Syntax :</strong></p>
+
+    <pre>
+    <code>
+    selector:disabled {
+        /* CSS styles here */
+    }
+    </code>
+    </pre>
+
+    <h2>Disabled Inputs</h2>
+
+    <input type="text" value="can't edit me" disabled>  <br><br>
+
+    <textarea disabled>Disabled textarea</textarea> <br><br>
+
+    <button disabled>Disabled button</button>   <br><br>
+
+    <select disabled>
+        <option>option 1</option>
+        <option>option 2</option>
+    </select>
+
+    <p>How it works :</p>
+
+    <ul>
+        <li>The disabled input gets a gray background and red text.</li>
+        <li>The disabled textarea and button also show the same styling.</li>
+        <li>The disabled select is styled similarly.</li>
+        <li> the <b>cursor: not-allowed;</b> makes it clear the element cannot be interacted with.</li>
+    </ul>
+
+    <hr>
+
+    <p>Difference recap</p>
+    <ul>
+        <li><b>:enabled  -></b>targets elements that are active/usable.</li>
+        <li><b>:disabled  -></b>targets elements that are inactive/unusable.</li>
+    </ul>
+
+</body>
+
+</html>

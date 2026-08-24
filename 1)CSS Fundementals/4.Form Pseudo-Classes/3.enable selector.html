@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :enabled</title>
+
+    <style>
+
+        input:enabled,
+        textarea:enabled,
+        button:enabled,
+        select:enabled {
+            background: lightgreen;
+            color: darkblue;
+            border: 2px solid green;
+        }
+
+        input:disabled,
+        textarea:disabled,
+        button:disabled,
+        select:disabled {
+            background: lightgray;
+            color: darkred;
+            border: 1px solid #999;
+            cursor: not-allowed;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">:enabled</h1>
+
+    <p>The :enabled selector in CSS is the opposite of :disabled. It targets form elements that are active and available for user interaction.</p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    selector:enabled {
+        /* CSS styles here */
+    }
+    </code>
+    </pre>
+
+    <h2>Enabled vs Disabled Inputs</h2>
+
+    <input type="text" value="I am enabled">        <br><br>
+    <input type="text" value="I am disabled" disabled>  <br><br>
+
+    <textarea>I am enable</textarea>    <br><br>
+    <textarea disabled>I am disabled</textarea> <br><br>
+    
+    <button>Enabled Button</button> <br><br>
+    <button disabled> Disabled Button</button>  <br><br>
+
+    <select>
+        <option></option>
+        <option>Enabled option 1</option>
+        <option>Enabled option 2</option>
+    </select>
+
+    <select disabled>
+        <option></option>
+        <option>Disabled option 1</option>
+        <option>Disabled option 2</option>
+    </select>
+
+    <hr>
+
+    <p>Difference Recap</p>
+
+    <p>
+        <b>:enabled </b>→ active, interactive elements.  <br>
+        <b>:disabled </b> → inactive, unavailable elements.  <br>
+        They’re often used together to visually distinguish form states.
+    </p>
+
+</body>
+
+</html>

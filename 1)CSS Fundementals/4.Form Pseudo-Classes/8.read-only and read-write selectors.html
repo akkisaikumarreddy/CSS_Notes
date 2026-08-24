@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :read-only and :read-write</title>
+
+    <style>
+        /* Read only fields */
+        input:read-only,
+        textarea:read-only {
+            background: #f0f0f0;
+            border: 2px solid gray;
+            color: darkred;
+        }
+
+        /* Read write fields */
+        input:read-write,
+        textarea:read-write {
+            background: #e6ffe6;
+            border: 2px solid green;
+            color: darkblue;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">:read-only and :read-write</h1>
+
+    <p>The :read-only and :read-write selectors in CSS are pseudo-classes that let you style form fields depending on whether the user can edit them or not.</p>
+    
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <cost>
+    input:read-only {
+        /* styles for fields that cannot be edited */
+    }
+
+
+    input:read-write {
+        /* styles for fields that can be edited */
+    }
+    </cost>
+    </pre>
+
+    <h2>Read-only vs Read-write Fields</h2>
+
+    <div align="center">
+        <form action="#" method="get">
+            <fieldset style="width: 500px;">
+
+                <legend>Read</legend>
+
+                <!-- Read-write input -->
+                <label for="username">Username (editable):</label>
+                <input type="text" id="username" name="username" value="Sai">
+                <br><br>
+
+                <!-- Read-only input -->
+                <label for="userid">User ID (read-only):</label>
+                <input type="text" id="userid" name="userid" value="12345" readonly>
+                <br><br>
+
+                <!-- Read-write textarea -->
+                <label for="bio">Bio (editable):</label>
+                <textarea id="bio" name="bio">Write something here...</textarea>
+                <br><br>
+
+                <!-- Read-only textarea -->
+                <label for="note">Note (read-only):</label>
+                <textarea id="note" name="note" readonly>This cannot be changed.</textarea>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <hr>
+
+    <p>How it works :</p>
+
+    <p><b>:read-only -></b>applies to fields with the readonly attribute.</p>
+
+    <p><b>:read-write -></b>applies to fields that are editable (no readonly).</p>
+
+    <ul>
+        <li>Username and Bio fields are editable → styled green background.</li>
+        <li>User ID and Note fields are read-only → styled gray background.</li>
+    </ul>
+
+    <p>Difference recap :</p>
+
+    <ol>
+        <li><b>:disabled -></b>field is completely inactive (cannot even focus or copy).</li>
+        <li><b>:read-only -></b>field is visible and focusable, but cannot be modified.</li>
+        <li><b>:read-write -></b>field is editable.</li>
+    </ol>
+
+</body>
+
+</html>

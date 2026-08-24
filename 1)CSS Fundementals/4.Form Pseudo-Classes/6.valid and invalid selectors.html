@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :valid and :invalid</title>
+
+    <style>
+
+        input:valid{
+            border: 2px solid green;
+            background: #e6ffe6;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+            background: #ffe6e6;;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">:valid and :invalid</h1>
+
+    <p>The :valid and :invalid selectors in CSS are pseudo-classes that let you style form fields based on whether their content passes built‑in HTML validation rules.</p>
+    
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    selector:valid {
+        /* styles for valid input */
+    }
+
+
+    selector:invalid {
+        /* styles for invalid input */
+    }
+    </code>
+    </pre>
+
+    <h2>Validation Example</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Valid vs Invalid</legend>
+            <!-- Required Text Input -->
+            <label for="name">Name (required):</label>
+            <input type="text" id="name" name="name" required>      <br><br>
+
+            <!-- Email input -->
+            <label for="email">Email (must be valid):</label>
+            <input type="email" id="email" name="email" required>       <br><br>
+
+            <!-- Pattern Input -->
+            <label for="zip">Zip Code (5 digits):</label>
+            <input type="text" id="zip" name="zip" pattern="\d{5}" required>     <br><br>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <p><b>:valid ->applies when the field meets its requirements:</b></p>
+
+    <ul>
+        <li>Required field is filled.</li>
+        <li>Email has a proper format (abc@xyz.com).</li>
+        <li>Pattern matches (e.g., 5 digits for ZIP).</li>
+    </ul>
+
+    <p><b>:invalid -></b>applies when the field fails validation:</p>
+
+    <ul>
+        <li>Empty required field.</li>
+        <li>Wrong email format.</li>
+        <li>Wrong pattern (e.g., letters instead of digits).</li>
+    </ul>
+
+</body>
+
+</html>
