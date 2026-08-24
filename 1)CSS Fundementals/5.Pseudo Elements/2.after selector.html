@@ -8,9 +8,59 @@
 
     <title>CSS - ::after</title>
 
+    <style>
+        h2::after {
+            content: "✨";
+            color: orange;
+        }
+
+        label[for="name"]::after {
+            content: " *";
+            color: red;
+        }
+
+        li::after {
+            content: " ✔";
+            color: green;
+        }
+    </style>
+
 </head>
 
 <body>
+
+    <h1 style="text-align: center;">::after</h1>
+
+    <p>
+        The ::after pseudo-element in CSS is just like ::before, but it inserts content after the actual content of an element.<br>
+        It’s commonly used for decorative symbols, extra text, or styling tricks without adding extra HTML.
+    </p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    selector::after {
+        content: "text or symbol";
+        /* other styles */
+    }
+
+
+    -><q><i>content is required (can be text, quotes, or empty "" if you only want styling).</i></q>
+    </code>
+    </pre>
+
+    <h2>Chapter 1</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required> <br>
+
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
     
 </body>
 
