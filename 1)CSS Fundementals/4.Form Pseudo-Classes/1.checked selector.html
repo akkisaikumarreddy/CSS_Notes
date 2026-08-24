@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :checked</title>
+
+    <style>
+
+        /* checkbox styling */
+        input[type="checkbox"]:checked + label {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Radio Button Styling */
+        input[type="radio"]:checked + label {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* select option styling */
+        option:checked {
+            background: yellow;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">:checked</h1>
+
+    <p>
+        The :checked selector in CSS is a pseudo-class that targets form elements that are checked or selected.<br>
+        It applies to :
+    </p>
+
+    <ul>
+        <li><strong>input type="checkbox"</strong> when checked</li>
+        <li><strong>input type="radio"</strong>  when selected</li>
+        <li><strong>&lt;option&gt; inside a &lt;select&gt;</strong> when chosen</li>
+    </ul>
+    
+    <h2>Checkbox Example</h2>
+
+    <input type="checkbox" id="agree" name="agree">
+    <label for="agree">I agree</label>
+
+    <h2>Radio Button Example</h2>
+
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label>  
+
+    <input type="radio" name="gender" id="female">
+    <label for="female">Female</label>
+
+    <h2>Select Option Example</h2>
+
+    <select>
+        <option></option>
+        <option>apple</option>
+        <option>banana</option>
+        <option>cherry</option>
+        <option>mango</option>
+    </select>
+
+</body>
+
+</html>

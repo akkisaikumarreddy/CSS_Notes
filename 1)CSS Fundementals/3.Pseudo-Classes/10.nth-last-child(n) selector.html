@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :nth-last-child(n) </title>
+
+    <style type="text/css">
+
+        li:nth-last-child(1) {
+            background-color: red;      /* Item 1 */
+        }
+
+        li:nth-last-child(3) {
+            background-color: blue;     /* Item 3 */
+        }
+
+        li:nth-last-child(7) {
+            background-color: green;     /* Item 7 (same as last child) */
+        }
+
+         li:nth-last-child(2n) {
+            font-size: 30px;
+            color: black;
+            font-style: italic;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> :nth-last-child(n) </h1>
+
+    <p>
+        The :nth-last-child(n) selector in CSS is the “reverse” version of :nth-child(n).<br>
+        Instead of counting from the beginning, it counts from the end of the parent’s children.
+    </p>
+
+    <p><strong>Syntax :</strong></p>
+
+    <pre>
+    <code>
+    selector:nth-last-child(n) {
+            /* CSS styles here */
+    }
+    </code>
+    </pre>
+
+    <pre>
+    <code>
+    <b>Style the last &lt;li&gt;  (same as li:last-child): </b>
+    
+    li:nth-last-child(1) {
+        color: red;
+    }
+    </code>
+    </pre>
+
+    <pre>
+    <code>
+    <b>Style the second-to-last &lt;li&gt; : </b>
+
+    li:nth-last-child(2) {
+        color: blue;
+    }
+    </code>
+    </pre>
+
+    <pre>
+    <code>
+    <b>Style every 3rd element starting from the end:</b>
+
+    li:nth-last-child(3n) {
+        background: yellow;
+    }
+    </code>
+    </pre>
+
+    <ul>
+        <li>Item 1</li>   <!-- first -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>   <!-- last -->
+    </ul>
+
+    <ul>
+        <li><strong>:nth-child(n) -></strong>counts forward from the beginning.</li>
+        <li><strong>:nth-last-child(n) -></strong> counts backward from the end.</li>
+    </ul>
+    
+</body>
+
+</html>

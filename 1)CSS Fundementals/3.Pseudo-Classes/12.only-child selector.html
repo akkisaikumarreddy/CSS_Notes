@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :only-child</title>
+
+    <style type="text/css">
+
+        p:only-child {
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">:only-child</h1>
+
+    <p>The :only-child selector in CSS is a pseudo-class that targets an element if it is the only child of its parent.</p>
+    
+    <p><strong>Syntax :</strong></p>
+
+    <pre>
+    <code>
+    selector:only-child {
+        /* CSS styles here */
+    }
+    </code>
+    </pre>
+
+    <div>
+        <p>I am the only child</p>
+    </div>
+
+    <div>
+        <p>First Child</p>
+        <p>Second Child</p>
+    </div>
+
+    <ul>
+        <li>The first &lt;div&gt; has only one &lt;p&gt;, so it gets styled red + bold.</li>
+        <li>The second &lt;div&gt; has two &lt;p&gt; elements, so neither is styled.</li>
+    </ul>
+
+    <hr>
+
+    <p><b>Let's recall the differences :</b></p>
+
+    <ul>
+        <li><strong>:first-child  -></strong>styles the first child.</li>
+        <li><strong>:last-child  -></strong>styles the last child</li>
+        <li><strong>:nth-child(n)  -></strong>styles the nth child.</li>
+        <li><strong>:only-child  -></strong>styles the element only if it’s the sole child of its parent.</li>
+    </ul>
+
+</body>
+
+</html>

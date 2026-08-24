@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :only-of-type</title>
+
+    <style>
+
+        div p:only-of-type {
+            color: red;
+            font-weight: bold;
+        }
+
+        li:only-of-type {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">:only-of-type</h1>
+
+    <p>The :only-of-type selector in CSS is a pseudo-class that targets an element if it is the only one of its type within its parent.</p>
+
+    <p><strong>Syntax :</strong></p>
+
+    <pre>
+    <cost>
+    selector:only-of-type {
+        /* CSS styles here */
+    }
+    </cost>
+    </pre>
+
+    <div>
+        <p>I am the only &lt;p&gt; here.</p>
+        <span>I am a span</span>
+    </div>
+
+    <hr style="width: 40%;  margin-left: 0; margin-right: auto;">
+
+    <div>
+        <p>First paragraph</p>
+        <p>Second Paragraph</p>
+    </div>
+
+    <p>
+        In the first &lt;div&gt;, the &lt;p&gt; is the only &lt;p&gt; inside, so it gets styled red + bold.<br>
+        In the second &lt;div&gt;, there are two &lt;p&gt; elements, so neither is styled.
+    </p>
+
+    <hr>
+
+    <ul>
+        <li>Item 1</li>
+        <span>Not an li</span>
+    </ul>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <p>
+        The first &lt;ul&gt; has only one &lt;li&gt; (even though it also has a &lt;span&gt;), so that &lt;li&gt; gets a yellow background.<br>
+        The second &lt;ul&gt; has two &lt;li&gt;s, so none are styled.
+    </p>
+    
+    <hr>
+
+    <p>Difference Recap</p>
+
+    <p>
+        <strong>:only-child</strong> → element is the only child of its parent (no siblings at all). <br>
+        <strong>:only-of-type</strong> → element is the only one of its type inside the parent (other types may exist).
+    </p>
+
+</body>
+
+</html>

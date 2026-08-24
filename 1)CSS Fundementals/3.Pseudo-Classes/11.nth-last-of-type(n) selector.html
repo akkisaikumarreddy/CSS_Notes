@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :nth-last-of-type(n)</title>
+
+    <style type="text/css">
+
+        /* Style the last <li> (same as li : last-of-type) */
+        li:nth-last-of-type(1) {
+            color: red;
+        }
+
+        /* Style the second-to-last <li> */
+        li:nth-last-of-type(2) {
+            color: blue;
+        } 
+
+        /* Style the third-to-last <li> */
+        li:nth-last-of-type(3) {
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">:nth-last-of-type(n)</h1>
+
+    <p>
+        The :nth-last-of-type(n) selector is a pseudo-class that lets you style elements based on their position from the end, but restricted to a specific element type.<br>
+        It’s like :nth-last-child(n), except it only counts siblings of the same type.
+    </p>
+
+    <p><strong>Syntax:</strong></p>
+
+    <pre>
+    <code>
+    selector:nth-last-of-type(n) {
+        /* CSS styles here */
+    }
+    </code>
+    </pre>
+
+    <ul>
+        <li>Item 1</li>   <!-- first li -->
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>   <!-- last li -->
+        <span>Not an li</span>
+    </ul>
+
+    <p>What i did is :</p>
+    <ul>
+        <li><strong>li:nth-last-of-type(1)  -></strong> Item 7 (last &lt;li&gt;).</li>
+        <li><strong>li:nth-last-of-type(2)  -></strong> Item 6 (second-to-last &lt;li&gt;).</li>
+        <li><strong>li:nth-last-of-type(3)  -></strong> Item 5 (third-to-last &lt;li&gt;).</li>
+    </ul>
+
+    <p><big>Difference Recap :</big></p>
+    <ul>
+        <li><strong>:nth-child(n)  -></strong> counts forward among all children.</li>
+        <li><strong>:nth-last-child(n)  -></strong> counts backward among all children.</li>
+        <li><strong>:nth-of-type(n)  -></strong> counts forward among elements of the same type.</li>
+        <li><strong>:nth-last-of-type(n)  -></strong> counts backward among elements of the same type.</li>
+    </ul>
+
+
+</body>
+
+</html>

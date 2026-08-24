@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :nth-child(n)</title>
+
+    <style type="text/css">
+
+        li:nth-child(odd) {
+            background-color: yellow;
+        }
+
+        li:nth-child(even) {
+            background-color: orange;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">:nth-child(n)</h1>
+
+    <p>The :nth-child(n) selector in CSS is a pseudo-class that lets you style elements based on their position (order) inside their parent.</p>
+
+    <pre>
+    <cost>
+    selector:nth-child(n) {
+        /* CSS styles here */
+    }
+    </cost>
+    </pre>
+
+    <hr>
+
+    <pre>
+    <code>
+    <p><b>Style the 2nd &lt;li&gt;  in a list:</b></p>
+    
+    li:nth-child(2) {
+        color: red;
+    }
+    </code>
+    </pre>
+
+    <hr>
+
+    <pre>
+    <code>
+    <p><b>Style every odd &lt;p&gt; :</b></p>
+    
+    p:nth-child(odd) {
+         background: lightgray;
+    }
+    </code>
+    </pre>
+
+    <hr>
+
+    <pre>
+    <code>
+    <p><b>Style every even &lt;p&gt; :</b></p>
+    
+    p:nth-child(even) {
+         background: lightgray;
+    }
+    </code>
+    </pre>
+
+    <hr>
+
+    <pre>
+    <code>
+    <p><b>Style every 3rd &lt;div&gt; :</b></p>
+    
+    div:nth-child(3n) {
+        border: 2px solid green;
+    }
+    </code>
+    </pre>
+
+    <ul>
+        <li>Item 1</li>   <!-- styled by odd -->
+        <li>Item 2</li>   <!-- styled by even -->
+        <li>Item 3</li>   <!-- styled by odd -->
+        <li>Item 4</li>   <!-- styled by even -->
+    </ul>
+
+    
+</body>
+
+</html>

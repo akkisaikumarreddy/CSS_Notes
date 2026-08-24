@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :last-child</title>
+
+    <style type="text/css">
+
+        div p:last-child {
+            color: blue;
+            font-weight: bold;
+        }
+
+        body >ss p:last-child {
+            color: green;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">:last Child</h1>
+
+    <p>The <b>:last-child</b> selector in CSS is a pseudo-class that targets an element if it is the last child of its parent.</p>
+
+    <p><strong><big>:last-child → must literally be the last node.</big></strong></p>
+    
+    <pre>
+    <code>
+    selector:last-child {
+    /* CSS styles here */
+    }
+    </code>
+    </pre>
+
+    <div>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+    </div>
+
+    <hr>
+
+    <p>here div p:last-child won't work because last child is not p but span. just like :first-child also</p>
+
+    <div>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+        <span>Something after</span>
+    </div>
+
+    <hr>
+
+    <div>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+    </div>
+
+    <hr>
+
+    <ul>
+        <li><strong>div p:last-child  -></strong>looks at each &lt;div&gt; and styles its last &lt;p&gt; child.</li>
+        <li><strong>body > p:last-child  -></strong>styles the last &lt;p&gt; that is a direct child of <body> (not inside a &lt;div&gt;).</li>
+    </ul>
+
+    <ol>
+        <li><strong>:last-child -></strong> strict, only if &lt;p&gt; is the very last element.</li>
+        <li><strong>:last-of-type -></strong> flexible, styles the last &lt;p&gt; even if other tags follow.</li>
+    </ol>
+
+    <p>The last paragraph in body (styled green)</p>
+</body>
+
+</html>

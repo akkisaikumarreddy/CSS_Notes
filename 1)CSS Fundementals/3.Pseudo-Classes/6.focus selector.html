@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - :Focus selector</title>
+
+    <style type="text/css">
+
+        .a button:focus {
+            outline: 2px solid red;        /* Always shows when focused */
+        }
+
+        .b button:focus-visible {
+            outline: 2px solid blueviolet; /* Shows only when tabbing with keyboard */
+        }
+
+        .c:focus-within button {
+            outline: 2px solid green;      /* Shows when ANY child inside .c has focus */
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">:focus Selectors</h1>
+
+    <p>
+        There are two types of focus selectors are there <br>
+        1.  :focus-visible  <br>
+        2.  :focus-within    
+    </p>
+
+    <h2> :f0cus-visible</h2>
+
+    <p>The :focus-visible selector in CSS is a pseudo-class that applies styles to an element when it receives focus and the browser determines that the focus should be visibly indicated.</p>
+    
+    <ul>
+        <li><strong>:focus -></strong>applies whenever an element is focused (e.g., clicked, tabbed into).</li>
+        <li><strong>:focus-visible -></strong>applies only when focus should be visually shown, usually when navigating via keyboard (like pressing Tab), not when clicking with a mouse.</li>
+    </ul>
+
+    <hr>
+
+    <p>For this button we will apply style ->  :focus </p>
+
+    <div class="a">
+
+        <button>Click Me</button>
+        <input type="text"  placeholder="Type here">
+
+    </div>
+
+    <hr>
+
+    <p>For this button we will apply style  ->  :focus-visible</p>
+
+    <div class="b">
+
+        <button>Click Me</button>
+        <input type="text"  placeholder="Type here">
+
+    </div>
+
+    <hr>
+
+    <h2>:focus-within</h2>
+
+    <p>The :focus-within selector in CSS is another pseudo-class that applies styles to a parent element when any of its children are focused.</p>
+
+    <p>For this button we will apply  ->  :focus-within</p>
+    
+    <div class="c">
+
+        <button>Click Me</button>
+        <input type="text"  placeholder="Type here">
+
+    </div>
+
+
+</body>
+
+</html>
