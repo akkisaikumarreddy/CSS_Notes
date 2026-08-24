@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - ::first-line</title>
+
+    <style>
+        div p::first-line {
+            font-weight: bold;
+            color: darkblue;
+            font-size: 1.2em;
+        }
+        section p::first-letter {
+            color: orange;
+            text-transform: uppercase;
+        }
+        section p::first-line {
+            color: teal;
+            text-transform: uppercase;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">::first-line</h1>
+
+    <p>
+        The ::first-line pseudo-element in CSS lets you style the first line of text inside a block-level element (like a paragraph or heading).<br>
+        It’s different from ::first-letter because it applies to the entire line, not just the first character.
+    </p>
+
+    <p><b>Syntax;</b></p>
+
+    <pre>
+    <code>
+    selector::first-line {
+        /* styles for the first line */
+    }
+    </code>
+    </pre>
+
+    <div>
+        <p>
+            This is the first line of the paragraph. It will be styled differently. <br>
+            The rest of the paragraph will look normal, even if it wraps onto multiple lines.
+        </p>
+    </div>
+
+    <section>
+        <p>
+            This is the first line of the paragraph. It will be styled differently. <br>
+            The rest of the paragraph will look normal, even if it wraps onto multiple lines.
+        </p>
+    </section>
+
+    <hr>
+
+    <p>Key points :</p>
+
+    <ul>
+        <li>Works only on block-level elements (like &lt;p&gt;, &lt;h1&gt;, &lt;div&gt;).</li>
+        <li>Styles apply only to the first line as it appears in the layout (depends on screen width and wrapping).</li>
+        <li>You can style font, color, size, text-transform, etc.</li>
+        <li>Not all properties apply (e.g., you can’t use margin or padding on ::first-line).</li>
+    </ul>
+    
+</body>
+
+</html>
