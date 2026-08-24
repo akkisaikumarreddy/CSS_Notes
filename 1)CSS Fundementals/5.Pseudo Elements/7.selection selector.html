@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - ::selection</title>
+
+    <style>
+
+        ::selection{
+            background: #0077b6;
+            color: white;
+        }
+
+        .a p::selection {
+            background: gold;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">::selection</h1>
+
+    <p>
+        The ::selection pseudo-element in CSS lets you style the portion of text that a user highlights (selects) with their mouse or keyboard.<br>
+        By default, browsers usually show selected text with a blue background and white text, but you can customize it.
+    </p>
+
+    <p><b>Syntax:</b></p>
+
+    <pre>
+    <code>
+    selector::selection {
+        /* styles for selected text */
+    }
+    </code>
+    </pre>
+
+    <h2>Custom selection colors</h2>
+
+    <div class="a">
+        <p>
+            Try selecting this text with your mouse or keyboard. 
+            The highlight will look different!
+        </p>
+    </div>
+
+    <h3>This style will apply for all text in the page.</h3>
+    <pre>
+    <code>
+    ::selection {
+        background: #0077b6;
+        color: white;
+    }
+    </code>
+    </pre>
+
+    <hr>
+
+    <h3>Key Points</h3>
+    <ul>
+        <li>Works on text content inside elements.</li>
+        <li>You can style background-color, color, text-shadow.</li>
+        <li>Other properties (like margin, padding, border) won’t apply.</li>
+        <li>If you don’t specify ::selection, the browser uses its default highlight style.</li>
+        <li>You can target specific elements (e.g., h1::selection, p::selection) or apply globally with just ::selection.</li>
+    </ul>
+    
+</body>
+
+</html>
