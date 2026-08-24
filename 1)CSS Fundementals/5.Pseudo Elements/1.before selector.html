@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - ::before</title>
+
+    <style>
+
+        h2::before {
+            content: "📖 ";
+            color: orange;
+        }
+
+        label::before {
+            content: "* ";
+            color: red;
+        }
+
+        li::before {
+            content: "✔ ";
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> ::before</h1>
+
+    <p>
+        The ::before selector in CSS is a pseudo-element that lets you insert content before the actual content of an element.<br>
+        It’s often used for decorative icons, labels, or styling tricks without adding extra HTML.
+    </p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    selector::before {
+        content: "text or symbol";
+        /* other styles */
+    }
+    </code>
+    </pre>
+
+    <h2>Chapter 1</h2>
+
+    <label for="name">Name :</label>
+    <input type="text" id="name" name="name" required>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Guava</li>
+    </ul>
+
+    <hr>
+
+    <p>Summary :</p>
+
+    <ul>
+        <li><b>::before</b> inserts content before an element’s actual content.</li>
+        <li>Must use the content property.</li>
+        <li>Great for icons, labels, or decorative effects without extra HTML.</li>
+    </ul>
+    
+</body>
+
+</html>
