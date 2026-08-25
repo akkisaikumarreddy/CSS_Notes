@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - Display Property</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>CSS - Display Property</h1>
+
+    <h2>Block Element</h2>
+
+    <p>Block Element (or block-level element) is an element that always starts on a new line and automatically occupies the full width available of its parent container</p>
+
+    <!-- Block Elements : takes full width -->
+    <div class="block">Block element 1</div>
+    <div class="block">Block element 2</div>
+
+    <hr>
+
+    <h2>Inline Elements</h2>
+
+    <p>
+        Inline elements occupy only the exact horizontal space required by their content and do not force a new line before or after themselves.<br>
+        They sit side-by-side with surrounding content, flowing naturally from left to right within a text
+    </p>
+
+    <!-- Inline elements: flow side by side -->
+    <span class="inline">Inline Element</span>
+    <span class="inline">Inline Element</span>
+
+    <hr>
+
+    <h2>Inline-block elements</h2>
+
+    <p>
+        Inline-block is a hybrid layout property that combines the behaviors of both inline and block elements.<br>
+        It allows an element to sit side by side with other elements on the same line while fully respecting custom width, height, padding, and margin properties.
+    </p>
+
+    <!-- Inline-block elements: inline but allow width/height -->
+    <div class="inline-block">Inline-Block 1</div>
+    <div class="inline-block">Inline-Block 2</div>
+
+    <hr>
+
+    <h2>None value</h2>
+
+    <p>none is a highly powerful value used with various CSS properties to completely hide elements, remove decorations, or disable default layouts.</p>
+
+    <!-- Hidden element -> display : none -->
+    <div class="none">This is hidden (display:none)</div>
+
+    <hr>
+
+    <h2>FlexBox Layout</h2>
+
+    <p>
+        Flexbox is a one-dimensional layout.
+        A CSS flexbox container is a parent element that makes its direct children flexible.
+    </p>
+
+    <!-- Flex container : children arranged in a row -->
+    <div class="flex">
+        <div>Flex 1</div>
+        <div>Flex 2</div>
+        <div>Flex 3</div>
+    </div>
+
+    <hr>
+
+    <h2>Inline-Flex container</h2>
+
+    <p>
+        An inline-flexbox container is created using display: inline-flex, which makes an element behave like an inline-level box <br>
+        on the outside while establishing a flexible box layout for its direct children on the inside
+    </p>
+
+    <!-- Inline-flex container: behaves like inline but flex layout inside -->
+    <div class="inline-flex">
+        <div>Inline-Flex 1</div>
+        <div>Inline-Flex 2</div>
+        <div>Inline-Flex 3</div>
+    </div>
+
+    <hr>
+
+    <h2>Grid layout</h2>
+
+    <p>
+        Grid Layout is a powerful two-dimensional layout system that allows you to handle both columns and rows simultaneously.<br>
+        Unlike Flexbox, which is primarily one-dimensional (aimed at a single row or column).
+    </p>
+
+    <!-- Grid Container : children arranged in rows and columns -->
+    <div class="grid">
+        <div>Grid 1</div>
+        <div>Grid 2</div>
+        <div>Grid 3</div>
+        <div>Grid 4</div>
+        <div>Grid 5</div>
+        <div>Grid 6</div>
+    </div>
+
+    <hr>
+
+    <h2>Inline-Grid Container</h2>
+
+    <p>
+        creates a grid container that behaves like an inline-level element on the outside while maintaining a two-dimensional grid layout for its children on the inside
+    </p>
+
+    <!-- Inline-grid container: inline-level grid -->
+    <div class="inline-grid">
+        <div>Inline-grid 1</div>
+        <div>Inline-grid 2</div>
+        <div>Inline-grid 3</div>
+        <div>Inline-grid 4</div>
+        <div>Inline-grid 5</div>
+        <div>Inline-grid 6</div>
+    </div>
+
+    <hr>
+
+    <h2>Display : Contents</h2>
+
+    <p>
+        The display: contents property in CSS makes a container element effectively disappear from the layout,<br>
+        causing its direct child elements to act as if they are direct children of the next level up in the DOM tree
+    </p>
+
+    <div class="contents">
+        <span>Contents child 1</span>
+        <span>Contents child 2</span>
+        <span>Contents child 3</span>
+    </div>
+  
+    <br>
+    <hr>
+
+    <h2>Display : List-Item </h2>
+
+    <p>
+        In CSS, <b>display: list-item</b> makes any HTML element behave like a standard &lt;li&gt; element
+    </p>
+
+    <!-- List-item: behaves like <li> -->
+    <div class="list-item">
+        <div>List-Item Elements 1</div>
+        <div>List-Item Elements 2</div>
+        <div>List-Item Elements 3</div>
+    </div>
+
+    <hr>
+
+    <h2>Display : Table</h2>
+
+    <p>
+        The <b>display: table</b> property in CSS makes a non-table element (like a &lt;div&gt;) behave exactly like an HTML &lt;table&gt; element.
+    </p>
+
+    <!-- Table Layout using Display Properties -->
+    <div class="table">
+        <div class="table-row">
+            <div class="table-cell">Table Cell 1</div>
+            <div class="table-cell">Table Cell 2</div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">Table Cell 3</div>
+            <div class="table-cell">Table Cell 4</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

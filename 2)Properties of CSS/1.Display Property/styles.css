@@ -1,0 +1,142 @@
+h1{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+hr {
+    height: 3px;
+    background-color: black;
+    border: none;
+}
+
+h2{
+    color: crimson;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Block element: takes full width */
+.block {
+    display: block;
+    background: lightblue;
+    margin: 5px;
+    height: 50px;
+}
+
+/* Inline element: flows with text */
+.inline {
+    display: inline;
+    background: lightgreen;
+    height: 100px;
+    width: 200px;
+    margin: 5px;
+}
+
+/* Inline-block: inline but allows width/height */
+.inline-block {
+    display: inline-block;
+    background: lightcoral;
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* None: Hides the element completely */
+.none{
+    display: none;
+}
+
+/* Flex container : children arranged in a row */
+.flex {
+    display: flex;
+    background: lavender;
+    margin: 5px;
+    gap: 10px;
+}
+
+.flex div {
+    background: plum;
+    padding: 10px;
+}
+
+/* Inline-flex: inline-level flex container */
+.inline-flex {
+    display: inline-flex;
+    background: plum;
+    margin: 5px;
+    gap: 10px;           /* Space between child items*/
+}
+
+.inline-flex div {
+    background: peru;
+    padding: 10px;
+}
+
+/* Grid Container : Children arranged in rows and columns */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 equal-width columns */
+    background: purple;
+    margin: 5px;
+    gap: 10px;
+}
+
+.grid div {
+    background: gold;
+    padding: 8px;
+}
+
+/* Inline-grid: grid container but inline-level  */
+.inline-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);   /* 2 equal-width columns */
+    background: lightpink;
+    margin: 5px;          /* Space around container */
+    gap: 5px;             /* Space between grid cells */
+}
+
+.inline-grid div {
+    background: hotpink;
+    padding: 10px;
+}
+
+/* Contents: parent disappears, children act like direct children */
+.contents {
+    display: contents;  /* Parents disappears, children acts like siblings */
+    background: hotpink;
+    margin: 5px; 
+}
+
+.contents span {
+    background: blueviolet;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* List-item: behaves like <li> */
+.list-item {
+    display: list-item;
+    margin: 5px;
+}
+.list-item div {
+    display: list-item;
+    margin: 10px;
+}
+
+/* Table Layout Using display properties */
+.table {
+    display: table;                 /* Makes element behave like a table */
+    border: 1px solid black;      /* Table border */
+    margin: 5px;                    /* Space around table */
+}
+
+.table-row {
+    display: table-row;             /* Defines a row inside table */
+}
+
+.table-cell {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 5px;
+}
