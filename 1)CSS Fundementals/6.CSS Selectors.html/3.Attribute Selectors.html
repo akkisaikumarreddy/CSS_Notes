@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - Attribute Selectors</title>
+
+    <style>
+        hr {
+            height: 2px;
+            background-color: black;
+            border: none;
+        }
+
+        h2 {
+            color: crimson;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .a {
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        [title] {
+            color: darkblue;
+            border-bottom: 2px dotted darkblue;  /* dotted underline */
+        }
+
+        input[required] {
+            border: 2px solid crimson;
+            background-color: aliceblue #ffe6e6;
+        }
+
+        input[type="password"] {
+            border: 2px solid burlywood;
+            background-color: #ffe6e6;
+        }
+
+        a[target="_blank"] {
+            color: green;
+            font-weight: bold;
+        }
+
+        a[href^="https"] {
+            color: green;
+            font-weight: bold;
+        }
+
+        img[src^=icons] {
+            border: 2px solid blue;
+            padding: 5px;
+        }
+
+        a[href*="example"] {
+            color: purple;
+            font-weight: bold;
+        }
+
+        img[src*="image"] {
+            border: 3px solid orange;
+            padding: 5px;
+        }
+
+        input[class*="field"] {
+            background-color: #e6f7ff;
+            border: 2px solid #3399ff;
+        }
+
+        /* Style all links that end with .pdf */
+        a[href$=".pdf"] {
+            color: orange;
+            font-weight: bold;
+        }
+
+        /* Style all inputs whose name ends with "id" */
+        input[name$="id"]{
+            background-color: #f0f8ff;
+            border: 2px solid navy;
+        }
+
+        /* Style elements with class containing the word "highlight" */
+        [class~="highlight"] {
+            color: crimson;
+            font-weight: bold;
+            background-color: #ffe6e6;
+            padding: 5px;
+        }
+
+        /* Style elements with title containing the word "info" */
+        [title~="info"] {
+            border-bottom: 2px dotted darkblue;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Attribute Selectors</h1>
+
+    <p>
+        The Attribute Selector in CSS lets you style elements based on the presence or value of their HTML attributes.<br>
+        It’s very powerful for targeting specific inputs, links, or custom data attributes without needing classes or IDs.
+    </p>
+
+    <h2>1.Presence Selector</h2>
+
+    <p>The Presence Attribute Selector in CSS is the simplest form of attribute selector. It targets elements that have a specific attribute, regardless of the attribute’s value.</p>
+    
+    <p><b>Syntax:</b></p>
+
+    <pre>
+    <code>
+    [attribute] {
+        property: value;
+    }
+    </code>
+    </pre>
+
+    <p title="info">This paragraph has a title attribute, so it is styled.</p>
+    <p>This paragraph has no title attribute, so it is not styled.</p>
+
+    <form>
+        <fieldset style="width: fit-content;">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <br><br>
+
+            <label for="email">Alternate Email:</label>
+            <input type="email" id="email" name="email">
+
+        </fieldset>
+    </form>
+
+    <p class="a">Key Points</p>
+    <ul>
+        <li>[attr] → selects elements that contain the attribute, no matter its value.</li>
+        <li>Useful for styling required fields, links with titles, or custom data attributes.</li>
+        <li>More specific variations exist ([attr="value"], [attr^="value"], etc.), but presence selector is the most general.</li>
+    </ul>
+
+    <hr>
+
+    <h2>2.Attribute Value Selector</h2>
+
+    <p>The Attribute Value Selector in CSS lets you style elements based on an attribute’s exact value. It’s written inside square brackets with the attribute name and value.</p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    [attribute="value"] {
+        property: value;
+    }
+    </code>
+    </pre>
+
+    <form>
+        <fieldset style="width: fit-content;">
+            <label>Username:</label>
+            <input type="text" placeholder="Enter your name"> <br><br>
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter Your Password">
+        </fieldset>
+    </form>
+
+    <a href="https://www.google.com/?zx=1787641370969" target="_blank">External Google Link</a> <br>
+    <a href="https://www.google.com/?zx=1787641370969">Google Link</a>
+
+    <p class="a">Key Points:</p>
+    <ul>
+        <li>[attr="value"] → matches elements where the attribute equals the given value.</li>
+        <li>Useful for styling specific input types, links with certain targets, or custom data attributes.</li>
+        <li>More precise than the presence selector ([attr]), since it checks the actual value.</li>
+    </ul>
+
+    <hr>
+
+    <h2>3.Substring Matching(^=)</h2>
+
+    <p>
+        The Substring Matching Attribute Selector in CSS lets you style elements based on whether an attribute’s value starts with (^=), ends with ($=), or contains (*=) a specific substring.
+        Since we are talking about ^= (starts with).
+    </p>
+
+    <p><b>Syntax:</b></p>
+    <pre>
+    <code>
+    [attribute^="value"] {
+        property: value;
+    }
+    </code>
+    </pre>
+
+    <a href="https://www.google.com/?zx=1787641370969">Secure Link (styled)</a> <br>
+    <a href="htp://www.google.com/?zx=1787641370969">Non-Secure Link (not Styled)</a> <br>
+
+    <img src="6.CSS Selectors.html/images/Naruto(1).jpg" alt="naruto image"> <br>
+    <img src="6.CSS Selectors.html/icons/CSS icon.png" alt="CSS Icon">
+
+    <p class="a">Key Points:</p>
+    <ul>
+        <li><b>[attr^="value"]</b> ->matches when the attribute starts with that value. </li>
+        <li>Commonly used for:</li>
+        <ul style="list-style-type: circle;">
+            <li>Styling secure links (a[href^="https"]).</li>
+            <li>Targeting file paths (img[src^="icons/"]).</li>
+            <li>Matching data attributes (div[data-role^="admin"]).</li>
+        </ul>
+        <li>More flexible than exact match ([attr="value"]) because it allows partial matching.</li>
+    </ul>
+
+    <hr>
+
+    <h2>4.Wildcard Selector (*=)</h2>
+
+    <p>
+        The Wildcard Attribute Selector (*=) in CSS is used to match elements whose attribute values contain a specific substring anywhere within them.<br>
+        It’s more flexible than the exact match (=) or starts/ends with (^=, $=) selectors.
+    </p>
+    <p><b>Syntax:</b></p>
+    <pre>
+    <code>
+    [attribute*="value"] {
+        property: value;
+    }
+    </code>
+    </pre>
+
+    <p><a href="https://example.com/home">Example Link (styled)</a></p>
+    <p><a href="https://mysite.com/page">Regular Link (not styled)</a></p>
+
+    <img src="images/icon-user.png" alt="User Icon"> <br>
+    <img src="images/banner.png" alt="Banner Image"> <br><br>
+
+    <form>
+        <input type="text" class="input-field" placeholder="Styled text field"> <br><br>
+        <input type="password" class="secure" placeholder="Not styled">
+    </form>
+
+    <p class="a">Key Points:</p>
+    <ul>
+        <li>[attr*="value"] → matches when the attribute contains the substring.</li>
+        <li>Useful for:</li>
+        <ul style="list-style-type: circle;">
+            <li>Styling links with certain keywords in their URL.</li>
+            <li>Targeting images or files with specific naming patterns.</li>
+            <li>Matching classes or data attributes that include a keyword.</li>
+        </ul>
+        <li>More general than ^= (starts with) or $= (ends with).</li>
+    </ul>
+
+    <hr>
+
+    <h2>5.Ends With Selector ($=)</h2>
+
+    <p>
+        The Ends With Attribute Selector ($=) in CSS is used to style elements whose attribute values end with a specific substring.<br>
+        It’s especially useful for targeting file extensions, domains, or any attribute that has a predictable ending.
+    </p>
+
+    <p><b>Syntax:</b></p>
+    <pre>
+    <code>
+    [attribute$="value"] {
+        property: value;
+    }
+    </code>
+    </pre>
+
+    <p><a href="document.pdf">Download PDF (styled)</a></p>
+    <p><a href="notes.docx">Download DOCX (not styled)</a></p>
+
+    <form>
+        <fieldset style="width: fit-content;">
+            <label>User ID: <input type="text" name="userid"></label><br><br>
+            <label>Session Code: <input type="text" name="sessioncode"></label>
+        </fieldset>
+    </form>
+
+    <p class="a">Key Points:</p>
+    <ul>
+        <li>[attr$="value"] → matches when the attribute ends with that substring.v</li>
+        <li>Common use cases:</li>
+        <ul>
+            <li>File extensions (.pdf, .jpg, .png).</li>
+            <li>Domain endings (.org, .edu).</li>
+            <li>Attribute suffixes like name$="id".</li>
+        </ul>
+        <li>More specific than *= (contains) and different from ^= (starts with).</li>
+    </ul>
+
+    <hr>
+
+    <h2>6.Word Match Selector (~=)</h2>
+
+    <p>
+        The Word Match Attribute Selector (~=) in CSS is used to match elements whose attribute value is a space-separated list of words and contains a specific word.<br>
+        It’s perfect for targeting elements with multiple classes or attributes that hold multiple keywords.
+    </p>
+
+    <pre>
+    <code>
+    [attribute~="value"] {
+        property: value;
+    }
+    </code>
+    </pre>
+
+    <p class="note highlight">This paragraph has "highlight" in its class list.</p>
+    <p class="note">This paragraph does not have "highlight".</p>
+
+    <p title="extra info">This paragraph has "info" in its title attribute.</p>
+    <p title="content">This one does not match, because "content" is not the exact word "info".</p>
+
+    <p class="a">Key Points:</p>
+    <ul>
+        <li>[attr~="value"] → matches if the attribute contains "value" as a separate word.</li>
+        <li>Commonly used with class attributes, since classes are space-separated.</li>
+        <li>Different from *= (contains substring), because ~= requires a whole word match.</li>
+    </ul>
+
+</body>
+
+</html>

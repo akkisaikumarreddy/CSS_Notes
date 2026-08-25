@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - Combinator Selectors</title>
+
+    <style>
+
+        h2{
+            color: crimson;
+            font-weight: bold;
+        }
+
+        div p{
+            color: darkgreen;
+            font-size: 20px;
+        }
+
+        article > p {
+            color: darkblue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h4 + p {
+            color: purple;
+            font-weight: bold;
+            background-color: #ffe6e6;
+            padding: 5px;
+        }
+
+        h5 ~ p {
+            color: green;
+            font-style: italic;
+            background-color: #f0e6ff;
+            padding: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Combinator Selectors</h1>
+
+    <p>Combinator selectors in CSS are used to define relationships between elements. They let you target elements based on how they are nested or positioned relative to each other. There are four main types:</p>
+    
+    <h2>Descendant Selector (space  )</h2>
+
+    <p>The Descendant Selector in CSS (written as a space between two selectors) is used to style elements that are nested inside another element, at any depth.</p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    parent descendant {
+        property: value;
+    }
+    </code>
+    </pre>
+
+    <p>This Paragraph is outside the div element ( not styled )</p>
+    <div>
+        <p>This Paragraph is inside the div element (styled)</p>
+        <section>
+            <p>This paragraph is inside a section, which is inside the div (still styled)</p>
+        </section>
+    </div>
+
+    <p>Key Points:</p>
+
+    <ul>
+        <li>div p → selects all &lt;p&gt; elements inside &lt;div&gt;, no matter how deeply nested.</li>
+        <li>The &lt;p&gt; outside the &lt;div&gt; is not styled.</li>
+        <li>Both &lt;p&gt; tags inside the &lt;div&gt;  (direct child and nested inside &lt;section&gt; ) are styled</li>
+    </ul>
+
+    <hr>
+
+    <h2>Child Selector (>)</h2>
+
+    <p>
+        The Child Selector (>) in CSS is used to select elements that are direct children of a specified parent.<br>
+        Unlike the descendant selector (space), which applies styles to all nested elements, the child selector only applies to the immediate children.
+    </p>
+
+    <p><b>Syntax:</b></p>
+
+    <pre>
+    <code>
+    parent > child {
+        property: value;
+    }
+    </code>
+    </pre>
+
+    <p>This Paragraph is outside the article element ( not styled )</p>
+    <article>
+        <p>This Paragraph is inside the article element (styled)</p>
+        <section>
+            <p>This paragraph is inside a section, which is inside the article ( not styled)</p>
+        </section>
+    </article>
+
+    <p>Key Points</p>
+
+    <ul>
+        <li><b>div > p </b> -> styles only &lt;p&gt; elements that are direct children of &lt;div&gt;. </li>
+        <li>Nested &lt;p&gt; elements inside another container (like <section>) are not affected.</li>
+        <li>More restrictive than the descendant selector.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Adjacent Sibling Selector (+)</h2>
+
+    <p>
+        The Adjacent Sibling Selector (+) in CSS is used to select an element that is the immediate next sibling of another element.<br>
+        It only applies styles to the first element directly after the specified one, sharing the same parent.
+    </p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    A + B {
+        property: value;
+    }
+
+
+    A = reference element
+    B = target element (must be immediately after A)
+    </code>
+    </pre>
+
+    <h4>Heading four</h4>
+    <p>This paragraph is styled (immediately after h4).</p>
+    <p>This paragraph is NOT styled (not immediately after h4).</p>
+
+    <h4>Heading four</h4>
+    <span>This span is not styled.</span>
+    <p>This paragraph is NOT styled because it’s not directly after h4.</p>
+
+    <P>Key Points</P>
+
+    <ul>
+        <li>h2 + p → styles only the first &lt;p&gt; immediately after &lt;h2&gt;.</li>
+        <li>If another element (like &lt;span&gt;) comes between them, the &lt;p&gt; won’t be styled.</li>
+        <li>More restrictive than the general sibling selector (~), which styles all following siblings.</li>
+    </ul>
+
+    <hr>
+
+    <h2>General Sibling Selector (~)</h2>
+
+    <p>
+        The General Sibling Selector (~) in CSS is used to select elements that are siblings of a specified element and come after it, sharing the same parent.<br>
+        Unlike the Adjacent Sibling Selector (+), which only targets the immediate next sibling, the general sibling selector applies to all following siblings.
+    </p>
+
+    <p><b>Syntax:</b></p>
+
+    <pre>
+    <code>
+    A ~ B {
+        property: value;
+    }
+    </code>
+    </pre>
+
+
+    <h5>Heading four</h5>
+    <p>This paragraph is styled (comes after h4).</p>
+    <p>This one is also styled (still after h4).</p>
+    <span>This span is not styled.</span>
+    <p>This paragraph is styled too (all following siblings).</p>
+
+    <main>
+        <p>Key Points:</p>
+        <ul>
+            <li>h2 ~ p → styles all &lt;p&gt; siblings after &lt;h2&gt;.</li>
+            <li>Only applies to elements with the same parent.</li>
+            <li>More flexible than +, because it doesn’t stop at the first sibling.</li>
+            <li>Great for styling multiple related elements after a heading or marker.</li>
+        </ul>
+    </main>
+
+
+</body>
+
+</html>
