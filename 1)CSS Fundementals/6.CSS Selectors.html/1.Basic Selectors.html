@@ -12,6 +12,37 @@
         *{
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        h2 {
+            color: crimson;
+            font-style: italic;
+        }
+
+        .note {
+            color: darkblue;
+            font-style: italic;
+        }
+
+        .pen {
+            color: teal;
+            font-weight: bold;
+            background-color: #ffe6e6;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        #sideheading {
+            color: darkred;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        #a {
+            background-color: lightblue;
+            padding: 10px;
+            border: 2px solid darkblue;
+        }
+
     </style>
 
 </head>
@@ -45,7 +76,18 @@
     </code>
     </pre>
 
-    <p>I applied font-family style for entire page by using ( * ) selector.</p>
+    <p><q> applied font-family style for entire page by using ( * ) selector.</q></p>
+
+    <p>Key Elements:</p>
+
+    <ul>
+        <li>Matches all elements (div, p, h1, span, etc.).</li>
+        <li>Commonly used for CSS resets (removing default margins/padding).</li>
+        <li>Can be heavy if overused, since it affects every element.</li>
+        <li>More specific selectors (like p, .class, #id) override it.</li>
+    </ul>
+
+    <hr>
 
     <h2>Element Selectors</h2>
 
@@ -61,7 +103,78 @@
     </code>
     </pre>
 
-    
+    <p><q>I applied style { color and font-style } to element &lt;h2&gt;.</q></p>
+
+    <p>Key Factors :</p>
+
+    <ul>
+        <li>Targets every occurrence of that element type (p, h1, ul, etc.)</li>
+        <li>No need for classes or IDs — it’s global for that tag.</li>
+        <li>Useful for setting consistent base styles (like font, color, spacing).</li>
+        <li>Can be overridden by more specific selectors (class, ID, inline styles).</li>
+    </ul>
+
+    <hr>
+
+    <h2>Class Selector (.)</h2>
+
+    <p>
+        The Class Selector (.) in CSS is used to style elements that have a specific class attribute.<br>
+        It’s one of the most common selectors because it lets you apply styles to multiple elements without repeating code.
+    </p>
+
+    <p><b>Syntax:</b></p>
+
+    <pre>
+    <code>
+    .classname {
+        property: value;
+    }
+    </code>
+    </pre>
+
+    <p>This is a normal Paragraph</p>
+    <p class="note">This Paragraph uses the <b>.note</b> class.</p>
+    <p class="pen">This Paragraph uses the <b>.pen</b> class.</p>
+
+    <p>Key Points:</p>
+
+    <ul>
+        <li>A class selector starts with a dot (.) followed by the class name.</li>
+        <li>You can assign the same class to multiple elements to reuse styles.</li>
+        <li>An element can have multiple classes (e.g., &lt;p class="note highlight"&gt;).</li>
+        <li>Class selectors are more specific than element selectors, but less specific than ID selectors.</li>
+    </ul>
+
+    <hr>
+
+    <h2> ID Selector (#)</h2>
+
+    <p>The ID Selector (#) in CSS is used to style a single, unique element on a page. Each element can have an id attribute, and you target it in CSS using #idName.</p>
+
+    <p><b>Syntax :</b></p>
+
+    <pre>
+    <code>
+    #idName {
+        property: value;
+    }
+    </code>
+    </pre>
+
+    <h4 id="sideheading">ID selector heading example.</h4>
+    <p>This is normal paragraph</p>
+    <p id="a">This paragraph is styled using the ID selector.</p>
+
+    <p>Key Points:</p>
+
+    <ul>
+        <li>An ID must be unique in a page (used for one element only).</li>
+        <li>ID selectors are more specific than class or element selectors, so they override them if there’s a conflict.</li>
+        <li>Syntax: #idName { ... }</li>
+        <li>Best used for unique elements like headers, footers, or specific highlighted sections.</li>
+    </ul>
+
 
 </body>
 
