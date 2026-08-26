@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - Background Properties</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+    <h1>CSS Background Properties</h1>
+
+    <h2>1.Solid Background Color</h2>
+
+    <p>
+        The background-color property in CSS sets the background color of an element.<br>
+        It can accept a color name (e.g., "red"), HEX value (e.g., "#ff0000"), or RGB value (e.g., "rgb(255, 0, 0)").
+    </p>
+    
+    <div class="bg-color">Background Color</div>
+
+    <hr>
+
+    <h2>2. Background image</h2>
+
+    <p>
+        The background-image property in CSS is used to set an image as the background of an element.<br>
+        By default, the image is repeated to cover the entire element unless specified otherwise.
+    </p>
+
+    <div class="bg-image"></div>
+
+    <hr>
+
+    <h2>3. Background repeat</h2>
+
+    <p>
+        The background-repeat property in CSS specifies how the background image is repeated. By default, the image repeats both horizontally and vertically.
+        You can control the repetition by specifying values such as repeat-x, repeat-y, or no-repeat.
+    </p>
+
+    <div class="bg-repeat">Background Repeat</div>
+
+    <div class="bg-repeat-x">Background Repeat-x</div>
+
+    <div class="bg-repeat-y">Background Repeat-y</div>
+
+    <hr>
+
+    <h2>4. Background no-repeat</h2>
+
+    <p>
+        To stop a background image from repeating (tiling) in CSS, you must set the background-repeat property to no-repeat
+    </p>
+
+    <div class="bg-no-repeat">Background No Repeat</div>
+
+    <hr>
+
+    <h2>5. Background position</h2>
+
+    <p>
+        The background-position property in CSS is used to set the starting position of the background image within the element.<br>
+        You can use values like top, left, center, or specify exact pixel/percentage values to position the image.
+    </p>
+
+    <div class="bg-position">Background Position</div>
+
+    <hr>
+
+    <h2>6. Background size cover</h2>
+
+    <p>
+        To make a background image completely fill a container without stretching or distorting, use the background-size: cover; property in your CSS.
+    </p>
+
+    <div class="bg-size-cover">Background Size Cover</div>
+
+    <hr>
+
+    <h2>7. Background size contain</h2>
+
+    <p>
+        The background-size: contain; in CSS scales your background image so that the entire image fits completely inside the container while strictly preserving its original aspect ratio.
+    </p>
+
+    <div class="bg-size-contain">Background Size Contain</div>
+
+    <hr>
+
+    <h2>8. Background attachment fixed</h2>
+
+    <p>
+        The background-attachment property in CSS specifies how the background image behaves when the user scrolls the page. By setting the value to fixed, the background image stays in place while the content of the page scrolls.
+    </p>
+
+    <div class="bg-attachment-fixed">Background Attachment Fixed</div>
+
+    <hr>
+
+    <h2>9. Background gradient</h2>
+
+    <p>
+        CSS gradients allow you to display smooth transitions between two or more specified colors.<br>
+        Gradients are treated as images in CSS, meaning they must be declared using the background-image or shorthand background property.
+    </p>
+    
+    <p>Linear Gradient(Straight Line)</p>
+    <div class="bg-gradient">Background Linear Gradient</div>
+
+    <p>Linear Gradient(diagonal Line)</p>
+    <div class="bg-gradient-diagonal">Background Linear Gradient(Diagonal)</div>
+
+    <p>Linear Gradient(Repeat Straight Line)</p>
+    <div class="bg-gradient-repeat">Background Repeating Linear Gradient</div>
+
+    <p> Angles on Linear Gradients</p>
+    <div class="bg-gradient-angles">Background Gradient Angles</div>
+
+    <p>Radial Gradient (Elliptical)</p>
+    <div class="bg-radial-gradient">Background Radial Gradient(Elliptical)</div>
+
+    <p>Radial Gradient (Circular)</p>
+    <div class="bg-radial-gradient-circle">Background Radial Gradient(Circular)</div>
+
+    <p>Angles on Conic Gradients</p>
+    <div class="bg-conic-gradient">Background Conic Gradients</div>
+
+    <p>Repeating Conic Gradient</p>
+    <div class="bg-repeat-conic-gradient">Background Repeat Conic Gradients</div>
+
+    <p>Overlaying Gradients</p>
+    <div class="bg-overlaying-gradient">Background Overlaying Gradient</div>
+
+    <hr>
+
+    <h2>10. Background shorthand</h2>
+
+    <p>
+        Instead of writing multiple background properties separately (background-image, background-repeat, background-position, background-size, background-attachment, background-color), you can combine them into one line using the background shorthand.
+    </p>
+
+    <div class="bg-shorthand">Background Shorthand</div>
+
+    <h2>11.Background Origin</h2>
+
+    <p>
+        The background-origin property sets the starting position of a background image relative to the element’s box.
+    </p>
+
+    <div class="bg-origin">Background Origin</div>
+
+    <hr>
+
+    <h2>12.Background Clip</h2>
+
+    <p>
+        The background-clip property defines how far the background (color or image) extends within an element.
+    </p>
+
+    <div class="bg-clip">Background Clip</div>
+
+</body>
+
+</html>

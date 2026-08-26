@@ -1,0 +1,162 @@
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+h2 {
+    color: crimson;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+hr {
+    height: 2px;
+    background : black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+div {
+    width: 600px;
+    height: 400px;
+    margin: 25px;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* 1. Background Color: fills box with solid teal */
+.bg-color {
+    background-color: teal;
+}
+
+/* 2. Background Image: places Mysore Palace photo */
+.bg-image {
+    background-image: url("Mysore_Palace.jpg");
+    background-size: 100%;
+}
+
+/* 3. Background Repeat , repeat-x , repeat-y */
+.bg-repeat{
+    background-image: url("Mysore_Palace.jpg");
+    background-repeat: repeat;
+    background-size: 50%;
+}
+
+.bg-repeat-x {
+    background-image: url("Mysore_Palace.jpg");
+    background-repeat: repeat-x;
+    background-size: 50%;
+}
+
+.bg-repeat-y {
+    background-image: url("Mysore_Palace.jpg");
+    background-repeat: repeat-y;
+    background-size: 50%;
+}
+
+/* 4. Background No Repeat */
+.bg-no-repeat {
+    background-image: url("Mysore_Palace.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+/* 5. Background Position */
+.bg-position {
+    background-image: url("Mysore_Palace.jpg");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;                   /* Prevents tiling */
+    background-position: bottom right;              /* Places image at bottom-right corner */
+}
+
+/* 6. Background Size Cover */
+.bg-size-cover {
+    background-image: url("Mysore_Palace.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* 7. Background Size Contain */
+.bg-size-contain {
+    background-image: url("Mysore_Palace.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 8. Background Attachment Fixed */
+.bg-attachment-fixed {
+    background-image: url("Mysore_Palace.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* 9. Background Gradient */
+.bg-gradient {
+    background-image: linear-gradient(to right, red, blue);       /* Smooth gradient from red → yellow */
+}
+
+.bg-gradient-diagonal {
+    background-image: linear-gradient(to bottom right , red, blue);
+}
+
+.bg-gradient-repeat {
+    background-image: repeating-linear-gradient(to bottom, red 0px , blue 20px,red 40px)       /* Smooth gradient from red → yellow */
+}
+
+.bg-gradient-angles {
+    background-image: repeating-linear-gradient(-45deg , blue, red 10px );
+}
+
+.bg-radial-gradient {
+    background-image: radial-gradient(yellow, green);
+}
+
+.bg-radial-gradient-circle {
+    background-image: radial-gradient(circle , yellow, green);
+}
+
+.bg-conic-gradient {
+    background-image: conic-gradient(from 45deg at 50% 50%, #090, #fff, #2a4f32);
+}
+
+.bg-repeat-conic-gradient {
+    background-image: repeating-conic-gradient(from 45deg at 50% 50%, #009900ff 0% , #ffffffff 10%, #2a4f32ff 20%);
+}
+
+.bg-overlaying-gradient {
+    background-image:  repeating-conic-gradient(from 0deg at 50% 50%, #008a9933 0% 12.5%, #ffffff33 12.5%, #2a445133 25%), 
+                linear-gradient(360deg, #9936004d 0% 50%, #ffffff4d 100%), 
+                radial-gradient(circle farthest-corner at 50% 50%, #009900ff 0% 50%, #ffffffff 50%, #2a4f32ff 100%);
+
+}
+
+.bg-shorthand {
+    background: url("Mysore_Palace.jpg")
+                no-repeat
+                center/cover;
+}
+
+/* Background Origin */
+.bg-origin {
+    background-image: url("Mysore_Palace.jpg");
+    background-origin: padding-box;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Background Clip */
+.bg-clip {
+    background-image: url("Mysore_Palace.jpg");
+    background-clip: content-box;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
