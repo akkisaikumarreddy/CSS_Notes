@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+/* Text color using named color */
+.text-color {
+    color: red;     /* makes text red */
+}
+
+/* Background color using named color */
+.bg-color {
+    background-color: lightblue;   /* fills background with light blue */
+    padding: 10px;
+}
+
+/* Border color using named color */
+.border-color {
+    border: 3px solid green;
+    padding: 15px;
+}
+
+/* Hexadecimal color */
+.hex-color {
+    color: #ff6600;     /* orange text using hex code */
+}
+
+
+/* RGB color */
+.rgb-color {
+    color: rgb(0, 128, 255);   /* blue text using RGB*/
+}
+
+/* RGBA color with transparency */
+.rgba-color {
+    color: rgba(255, 0, 0, 0.5);    /* semi-transparent red text */
+}
+
+
+/* HSL color */
+.hsl-color {
+    color: hsl(120, 100%, 25%);         /* dark green text using HSL */
+}
+
+/* HSLA color with transparency */
+.hsla-color {
+    color: hsla(240, 100%, 50%, 0.5);       /* semi-transparent blue text */
+}
