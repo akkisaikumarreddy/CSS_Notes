@@ -17,3 +17,88 @@ h2 {
     font-style: italic;
 }
 
+div {
+    width: 300px;
+    height: 130px;
+    margin: 15px;
+    text-align: center;         /* center text horizontally */
+    line-height: 100px;         /* center text vertically */
+    font-weight: bold;
+}
+
+/* 1. Border Shorthand: width + style + color in one line */
+.border-shorthand {
+    border: 3px solid black;         /* 3px thick, solid style, black color */
+}
+
+/* 2. Border Width: controls thickness */
+.border-width {
+    border-style: solid;
+    border-width: 8px;              /* thick border */
+}
+
+/* 3. Border Style: different line styles */
+.border-style {
+    border-style: solid;
+    border-width: 4px;
+}
+
+.border-style-double {
+    border-style: double;           
+    border-width: 4px;
+}
+
+.border-style-dotted {
+    border-style: dotted;
+    border-width: 4px;
+}
+
+.border-style-dashed {
+    border-style: dashed;
+}
+
+/* 4. Border sides Style */
+.border-right-style {
+    border: 5px solid black;
+    border-right-style: solid;
+}
+
+.border-right-style-none {
+    border: 5px solid black;
+    border-right-style: none;
+}
+
+.border-right-style-dotted {
+    border: 5px solid black;
+    border-right-style: dotted;
+}
+
+.border-right-style-double {
+    border: 5px solid black;
+    border-right-style: double;
+}
+
+.border-right-style-dashed {
+    border: 5px solid black;
+    border-right-style: dashed;
+}
+
+/* 5.Border Color: sets border color  */
+.border-color {
+    border: 4px solid purple;
+}
+
+/* 6. Border Sides: each side styled separately */
+.border-sides {
+    border-top: 3px solid green;
+    border-right: 5px dashed orange;
+    border-bottom: 7px dotted purple;
+    border-left: 4px double brown;
+}
+
+/* 7.Border Radius: rounded corners  */
+.border-radius {
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+}
+
