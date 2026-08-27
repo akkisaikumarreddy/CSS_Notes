@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+h2 {
+    color: crimson;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Container Styling */
+.container {
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 20px auto;
+    display: flex;        /* places boxes in a row */
+    gap: 25px;
+    background: black;
+}
+
+/* General box styling */
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  border: 2px solid white;
+  background-color: red;
+}
+
+/* 1. Static */
+.box.static {
+    position: static;   /* stays in normal flow */
+    top: 20px;
+    bottom: 30px;
+}
+
+/* 2. Relative */
+.box2.relative {
+    position: relative;
+    top: 20px;   /* moves down */
+    left: 30px;  /* moves right */
+}
