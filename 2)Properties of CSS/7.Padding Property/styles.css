@@ -18,8 +18,8 @@ img {
 }
 
 div {
-    width: 250px;
-    height: auto;
+    width: 400px;
+    height: 200px;
     background-color: lightgray;
     margin-bottom: 15px;
     font-weight: bold;
@@ -28,31 +28,53 @@ div {
 
 /* 1. Padding on all sides */
 .padding-all {
-    padding: 30px;    /* 20px inside space on all sides */
+    padding: 60px;    /* 20px inside space on all sides */
 }
 
 /* 2.Padding Top */
 .padding-top {
-    padding-top: 30px;    /* extra space above content */
+    padding-top: 60px;    /* extra space above content */
 }
 
 /* 3. Padding Right */
 .padding-right {
-    padding-right: 30px;     /* extra space on the right */
+    padding-right: 60px;     /* extra space on the right */
 }
 
 /* 4. Padding Bottom */
 .padding-bottom {
-    padding-bottom: 30px;     /* extra space below content */
+    padding-bottom: 60px;     /* extra space below content */
 }
 
 /* 5. Padding Left */
 .padding-left {
-    padding-left: 30px;     /* extra space on the left */
+    padding-left: 60px;     /* extra space on the left */
 }
 
 /* 6. Shorthand padding (top, right, bottom, left) */
 .padding-shorthand {
-    padding: 10px 20px 30px 40px;
+    padding: 20px 40px 60px 80px;
+}
+
+/* 7. Padding with two values */
+.padding-two-sides {
+    padding: 60px 30px;    
+}
+
+/* 8. Padding with three values */
+.padding-three-sides {
+    padding: 60px 40px 30px;
+}
+
+/* 9. Padding inside another padding */
+.outer-padding {
+    padding: 60px;
+    text-align: center;
+}
+
+.inner-padding {
+    height: 70px;
+    width: 70px;
+    background-color: pink;
 }
 
