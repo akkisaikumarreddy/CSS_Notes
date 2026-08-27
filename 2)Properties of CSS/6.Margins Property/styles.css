@@ -1,0 +1,61 @@
+img {
+    height: 400px;
+    margin: auto;
+    display: block;
+    width: 40%;
+}
+
+h1{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+div {
+    width: 250px;
+    height: 80px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 15px;        /* space between examples */
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+/* 1. Margin on all sides */
+.margin-all {
+    margin: 20px;  /* 20px space around the box */
+}
+
+/* 2. Margin Top */
+.margin-top {
+    margin-top: 40px; /* Extra Space Above */
+}
+
+/* 3. Margin Right */
+.margin-right {
+  margin-right: 40px; /* extra space on the right */
+}
+
+/* 4. Margin Bottom */
+.margin-bottom {
+  margin-bottom: 60px; /* extra space below */
+}
+
+
+/* 5. Margin Left */
+.margin-left {
+  margin-left: 80px; /* extra space on the left */
+}
+
+/* 6. Shorthand margin (top, right, bottom, left) */
+.margin-shorthand {
+  margin: 60px 20px 30px 40px;
+  /* top=10px, right=20px, bottom=30px, left=40px */
+}
+
+/* 7. Auto margin (centering horizontally) */
+.margin-auto {
+  width: 200px;
+  margin: 0 auto; /* centers horizontally */
+  background-color: lightblue;
+}
