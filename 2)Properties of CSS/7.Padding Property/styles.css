@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+h2{
+    color: crimson;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 40%;
+    height: 350px;
+}
+
+div {
+    width: 250px;
+    height: auto;
+    background-color: lightgray;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+/* 1. Padding on all sides */
+.padding-all {
+    padding: 30px;    /* 20px inside space on all sides */
+}
+
+/* 2.Padding Top */
+.padding-top {
+    padding-top: 30px;    /* extra space above content */
+}
+
+/* 3. Padding Right */
+.padding-right {
+    padding-right: 30px;     /* extra space on the right */
+}
+
+/* 4. Padding Bottom */
+.padding-bottom {
+    padding-bottom: 30px;     /* extra space below content */
+}
+
+/* 5. Padding Left */
+.padding-left {
+    padding-left: 30px;     /* extra space on the left */
+}
+
+/* 6. Shorthand padding (top, right, bottom, left) */
+.padding-shorthand {
+    padding: 10px 20px 30px 40px;
+}
+
