@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+h2 {
+    color: crimson;
+    text-decoration: underline;
+}
+
+/* 1. Font Family: sets typeface */
+.font-family {
+    font-family: Arial, sans-serif;     /* Uses Arial, fallback to sans-serif */
+}
+
+/* 2. Font Size: sets text size */
+.font-size {
+    font-size: 30px;
+}
+
+/* 3. Font Weight: controls thickness */
+.font-weight1 {
+    font-weight: bold;
+}
+
+.font-weight2 {
+    font-weight: lighter;
+}
+
+.font-weight3 {
+    font-weight: 900;
+}
+
+/* 4. Font Style: italic or normal */
+.font-style {
+    font-style: italic;
+}
+
+/* 5. Font Variant: small-caps */
+.font-variant1 {
+    font-variant: small-caps;    /* Lowercase letters shown as small capitals */
+}
+
+/* 6. Line Height: spacing between lines */
+.line-height {
+    line-height: 2.5;       /* 2.5 times the font size spacing */
+}
+
+/* 7. Letter Spacing: space between letters */
+.letter-spacing {
+    letter-spacing: 5px;        /* Adds 5px space between each letter */
+}
+
+/* 8. Word Spacing: space between words */
+.word-spacing {
+    word-spacing: 10px;      /* Adds 10px space between words */
+}
+
+
+/* 9. Text Transform: capitalization */
+.text-transform1 {
+    text-transform: uppercase;      /* Converts text to ALL CAPS */
+}
+
+.text-transform2 {
+    text-transform: lowercase;      /* Converts text to ALL small */
+}
+
+.text-transform3 {
+    text-transform: capitalize;      /* Converts first letter to capital and remaining small */
+}
+
+
+/* 10. Font Shorthand: multiple properties in one line */
+.font-shorthand {
+    font: italic bold 20px/1.5 Arial, sans-serif;
+}
+
