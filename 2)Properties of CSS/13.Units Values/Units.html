@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - UNITS</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>UNITS Values</h1>
+
+    <p>
+        CSS units define the size of elements and help control layout and spacing in a webpage.<br>
+        They can be absolute or relative depending on how values are calculated.
+    </p>
+
+    <ul>
+        <li>Absolute units like px and cm have fixed sizes and do not change with screen size.</li>
+        <li>Relative units like em, rem, %, and vh adjust based on parent elements or viewport.</li>
+        <li>Useful for creating responsive and scalable designs.</li>
+    </ul>
+
+    <h2>Absolute Units</h2>
+
+    <p>
+        Absolute units in CSS, such as px, cm, and mm, have fixed values and do not change based on the viewport or parent elements.<br>
+        They are used when precise, unchanging measurements are needed for elements.
+    </p>
+
+    <div class="container">
+        <div class="box box1">Box 1: px</div>
+        <div class="box box2">Box 2: cm</div>
+        <div class="box box3">Box 3: mm</div>
+        <div class="box box4">Box 4: in</div>
+        <div class="box box5">Box 5: pt</div>
+        <div class="box box6">Box 6: pc</div>       
+    </div>
+
+    <p style="text-decoration: underline; font-size: 30px;">Key Points:</p>
+
+    <dl>
+        <dt>Pixels (px):</dt>
+        <dd>A pixel (px) is the smallest unit on a digital screen, representing a point of light. More pixels mean better image clarity and higher screen resolution.</dd>
+        <dt>Centimeters (cm)</dt>
+        <dd>A centimeter (cm) is a length unit in the SI system, derived from the meter (m), with 1 m = 100 cm. </dd>
+        <dt>Millimeter (mm)</dt>
+        <dd>A Millimeter (mm) is a length unit in the SI system, measured in millimeters.</dd>
+        <dt>Inch(in)</dt>
+        <dd>The inch(in) originated from ancient human measurements, based on the width of a thumb or the length of a dried grain of barley.</dd>
+        <dt> pt (point)</dt>
+        <dd>A point (pt) is a typography unit equal to 1/72 of an inch, used for font sizes and spacing in design, measured in points (print unit).</dd>
+        <dt>pc(pica)</dt>
+        <dd>A pica is a unit used in print and design, equal to 12 points or 1/6 of an inch (4.233 mm).</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Relative Units</h2>
+
+    <p>
+        Relative units are CSS units that scale based on another value such as parent size or viewport.
+    </p>
+
+    <div class="container">
+        <div class="box box-1">Box 1: em</div>
+        <div class="box box-2">Box 2: rem</div>
+        <div class="box box-3">Box 3: %</div>
+        <div class="box box-4">Box 4: ex</div>
+        <div class="box box-5">Box 5: ch</div>
+        <div class="box box-6">Box 6: vw</div>
+        <div class="box box-7">Box 7: vh</div>
+        <div class="box box-8">Box 8: vmin</div>
+        <div class="box box-9">Box 9: vmax</div>
+        <div class="box box-10">Box 10: lh</div>
+    </div>
+
+    <p style="text-decoration: underline; font-size: 30px;">Key Points</p>
+
+     <ul>
+        <!-- em unit -->
+        <li><strong>em</strong> → relative to the font size of the element.</li>
+
+        <!-- rem unit -->
+        <li><strong>rem</strong> → relative to the root (<code>html</code>) font size.</li>
+
+        <!-- % unit -->
+        <li><strong>%</strong> → relative to the parent element’s size.</li>
+
+        <!-- ex unit -->
+        <li><strong>ex</strong> → relative to the x-height of the font (height of lowercase “x”).</li>
+
+        <!-- ch unit -->
+        <li><strong>ch</strong> → relative to the width of the “0” character in the font.</li>
+
+        <!-- vw unit -->
+        <li><strong>vw</strong> → relative to 1% of the viewport width.</li>
+
+        <!-- vh unit -->
+        <li><strong>vh</strong> → relative to 1% of the viewport height.</li>
+
+        <!-- vmin unit -->
+        <li><strong>vmin</strong> → relative to 1% of the smaller dimension (width or height).</li>
+
+        <!-- vmax unit -->
+        <li><strong>vmax</strong> → relative to 1% of the larger dimension (width or height).</li>
+
+        <!-- lh unit -->
+        <li><strong>lh</strong> → relative to the line-height of the element.</li>
+  </ul>
+    
+</body>
+
+</html>

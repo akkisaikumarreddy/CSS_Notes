@@ -1,0 +1,132 @@
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+h2{
+    color: crimson;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+dt {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    margin: 20px;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: beige;
+    text-align: center;
+}
+
+/* Box 1: px (pixels, fixed size) */
+.box1 {
+    width: 150px;       /* 150 pixels wide */
+    height: 100px;      /* 100 pixels tall */
+}
+
+/* Box 2: cm (centimeters) */
+.box2 {
+    width: 5cm;     /* 5 centimeters wide */
+    height: 3cm;    /* 3 centimeters tall */
+}
+
+/* Box 3: mm (millimeters) */
+.box3 {
+    width: 50mm;    /* 50 millimeters wide */
+    height: 30mm;   /* 30 millimeters tall */
+}
+
+/* Box 4: in (inches) */
+.box4 {
+  width: 2in;     /* 2 inches wide */
+  height: 1in;    /* 1 inch tall */
+}
+
+/* Box 5: pt (points) */
+.box5 {
+  width: 100pt;   /* 100 points wide (≈ 1.39 inches) */
+  height: 72pt;   /* 72 points tall (≈ 1 inch) */
+}
+
+/* Box 6: pc (picas) */
+.box6 {
+  width: 10pc;    /* 10 picas wide (≈ 1.67 inches) */
+  height: 6pc;    /* 6 picas tall (≈ 1 inch) */
+}
+
+/* Box 1: em (relative to element font size) */
+.box-1 {
+    font-size: 20px;            /* base font size */
+    width: 10em;                /* 10 × 20px = 200px */
+    height: 5em;                /* 5 × 20px = 100px */
+}
+
+/* Box 2: rem (relative to root font size) */
+.box-2 {
+    font-size: 20px;
+    width: 15rem;               /* 15 × 16px = 240px */
+    height: 8rem;               /* 8 × 16px = 128px */
+}
+
+/* Box 3: % (relative to parent container size) */
+.box-3 {
+  width: 50%;           /* half of parent width */
+  height: 50%;          /* half of parent height */
+  font-size: 20px;                
+}
+
+/* Box 4: ex (relative to x-height of font) */
+.box-4 {
+  font-size: 20px;
+  width: 20ex;                /* 20 × x-height of font */
+  height: 10ex;
+}
+
+/* Box 5: ch (relative to width of "0" character) */
+.box-5 {
+  font-size: 20px;
+  width: 20ch;                /* width of 20 "0" characters */
+  height: 10ch;
+}
+
+/* Box 6: vw (viewport width) */
+.box-6 {
+  width: 20vw;                /* 20% of viewport width */
+  height: 10vw;               /* 10% of viewport width */
+}
+
+/* Box 7: vh (viewport height) */
+.box-7 {
+  width: 20vh;                /* 20% of viewport height */
+  height: 10vh;               /* 10% of viewport height */
+}
+
+/* Box 8: vmin (smaller of viewport width/height) */
+.box-8 {
+  width: 20vmin;              /* 20% of smaller dimension */
+  height: 10vmin;
+}
+
+/* Box 9: vmax (larger of viewport width/height) */
+.box-9 {
+  width: 20vmax;              /* 20% of larger dimension */
+  height: 10vmax;
+}
+
+/* Box 10: lh (line-height of element) */
+.box-10 {
+  line-height: 30px;          /* base line-height */
+  width: 10lh;                /* 10 × line-height = 300px */
+  height: 5lh;                /* 5 × line-height = 150px */
+}
