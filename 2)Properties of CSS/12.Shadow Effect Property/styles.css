@@ -1,0 +1,96 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+
+h2 {
+    color: crimson;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.demo-text {
+    font-size: 32px;
+    margin: 20px;
+    font-family: Arial,  sans-serif;
+}
+
+/* gray shadow bottom-right */
+.text1 {
+    text-shadow: 2px 2px 5px gray;
+}
+
+/* blue shadow top-left */
+.text2 {
+    text-shadow: -2px -2px 3px blue;
+}
+
+/* glowing green shadow */
+.text3 {
+    text-shadow: 0 0 10px green;
+}
+
+/* multiple shadows (red + yellow) */
+.text4 {
+    text-shadow: 2px 2px 5px red, -2px -2px 5px yellow;
+}
+
+/* black shadow for readability */
+.text5 {
+    text-shadow: 1px 1px 2px black;
+}
+
+/* neon effect (pink glow) */
+.text6 {
+    text-shadow: 0 0 15px hotpink;
+}
+
+.container {
+    display: flex;              /* put boxes in a row */
+    gap: 30px;              /* space between boxes (this creates the gap) */
+    margin: 20px;
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: lightblue;
+    text-align: center;      /* center text horizontally */
+    line-height: 80px;       /* center text vertically */
+}
+
+/* shadow bottom-right */
+.box1 {
+    box-shadow: 5px 5px 10px blue;
+}
+
+/* shadow top-left */
+.box2 {
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.5);
+}
+
+/* glowing red shadow */
+.box3 {
+    box-shadow: 0 0 20px red;
+}
+
+/* inner shadow */
+.box4 {
+    box-shadow: inset 5px 5px 10px black;
+}
+
+/* multiple shadows (blue + green) */
+.box5 {
+    box-shadow: 5px 5px 10px blue, -5px -5px 10px green;
+}
+
+
+/* box + text shadow */
+.box6 {
+    box-shadow: 2px 2px 5px purple;
+    color: white;
+    text-shadow: 2px 2px 5px red;
+}
