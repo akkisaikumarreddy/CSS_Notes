@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+
+strong {
+    color: crimson;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: larger;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    gap: 20px;          /* space between boxes */
+    margin: 20px;
+}
+
+/* Common box styling */
+.box {
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #f9f9f9;
+    overflow: visible;      /* default, will be overridden */
+}
+
+/* Overflow variations */
+
+.box1 {
+    overflow: visible;      /* content spills out */
+}
+
+.box2{
+    overflow: hidden;       /* content clipped */
+}
+
+.box3 {
+    overflow: scroll;       /* scrollbars always */
+}
+
+.box4 {
+    overflow: auto;     /* scrollbars only if needed */
+}
+
+.box5 {
+    overflow-x: scroll;     /* horizontal scroll only */
+}
+
+.box6 {
+    overflow-y: scroll;     /* vertical scroll only */
+}

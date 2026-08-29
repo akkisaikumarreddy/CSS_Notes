@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - Overflow Property</title>
+
+    <link rel="stylesheet"  href="styles.css">
+
+</head>
+
+<body>
+    
+    <h1>Overflow Property</h1>
+
+    <div class="container">
+        
+        <!-- Box 1: visible -->
+        <div class="box box1">
+            <strong>Box 1: visible</strong><br>
+            This is a very long line of text that will not fit inside the box dimensions. 
+            With overflow: visible, the extra text spills outside the box boundaries.
+        </div>
+
+        <!-- Box 2: hidden -->
+        <div class="box box2">
+            <strong>Box 2: hidden</strong><br>
+            This is a very long line of text that will not fit inside the box dimensions. 
+            With overflow: hidden, the extra text is clipped and cannot be seen.
+        </div>
+
+        <!-- Box 3: scroll -->
+        <div class="box box3">
+            <strong>Box 3: scroll</strong><br>
+            This is a very long line of text that will not fit inside the box dimensions. 
+            With overflow: scroll, scrollbars appear even if not always needed. 
+            You can scroll to see hidden content.
+        </div>
+
+        <!-- Box 4: auto -->
+        <div class="box box4">
+            <strong>Box 4: auto</strong><br>
+            This is a very long line of text that will not fit inside the box dimensions. 
+            With overflow: auto, scrollbars appear only when necessary.
+        </div>
+
+        <!-- Box 5: overflow-x scroll -->
+        <div class="box box5">
+            <strong>Box 5: overflow-x scroll</strong><br>
+            This is a very very very very very very very very very very very very very long line 
+            that forces horizontal scrolling only.
+        </div>
+
+        <!-- Box 6: overflow-y scroll -->
+        <div class="box box6">
+            <strong>Box 6: overflow-y scroll</strong><br>
+            Line 1<br>
+            Line 2<br>
+            Line 3<br>
+            Line 4<br>
+            Line 5<br>
+            Line 6<br>
+            Line 7<br>
+            Line 8<br>
+            Line 9<br>
+            Line 10<br>
+            This forces vertical scrolling only.
+        </div>
+    </div>
+
+</body>
+
+</html>
