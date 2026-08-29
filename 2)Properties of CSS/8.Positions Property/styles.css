@@ -33,7 +33,7 @@ h2 {
 }
 
 /* 1. Static */
-.box.static {
+.box2.static {
     position: static;   /* stays in normal flow */
     top: 20px;
     bottom: 30px;
@@ -44,4 +44,22 @@ h2 {
     position: relative;
     top: 20px;   /* moves down */
     left: 30px;  /* moves right */
+}
+ /* 3. absolute */
+.box2.absolute {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+/* 4.Fixed */
+.box2.fixed {
+    position: fixed;
+    top: 200px;
+    left: 100px;
+}
+
+/* 5.Sticky */
+.box2.sticky {
+    position: sticky;
+    top: 0;
 }
