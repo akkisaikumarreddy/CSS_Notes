@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: bold;
+    color: crimson;
+    text-decoration: underline;
+}
+
+.demo {
+    width: 350px;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Collapses spaces, wraps text automatically */
+.normal {
+    white-space: normal;
+    color: blue;
+}
+
+/* Collapses spaces, prevents wrapping (text stays on one line) */
+.nowrap {
+    white-space: nowrap;
+    color: blue;
+}
+
+/* Preserves spaces and line breaks exactly, no wrapping */
+.pre {
+    white-space: pre;
+    color: blue;
+}
+
+/* Preserves spaces and line breaks, but allows wrapping */
+.pre-wrap {
+    white-space: pre-wrap;
+    color: blue;
+}
+
+/* Collapses spaces, preserves line breaks, allows wrapping */
+.pre-line{
+    white-space: pre-line;
+    color: blue;
+}
+
+.break-spaces {
+    white-space: break-spaces;
+    color: blue;
+}
+
+/* Resets property to default value (same as normal) */
+.initial {
+    white-space: initial;
+    color: blue;
+}
+
+/* Inherits property value from parent element */
+.inherit { 
+    white-space: inherit;
+    color: blue;
+}

@@ -60,6 +60,6 @@ h2 {
 
 /* 5.Sticky */
 .box2.sticky {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;                /* sticks to top when scrolling */
 }
