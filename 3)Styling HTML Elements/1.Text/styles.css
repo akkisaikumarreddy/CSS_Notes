@@ -1,0 +1,89 @@
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+h2 {
+    text-decoration: underline;
+    font-style: italic;
+    color: crimson;
+}
+
+.container {
+    margin: 20px;
+}
+
+/* Text Color */
+.color {
+    color: darkblue;   /* changes text color */
+}
+
+/*  Text alignment */
+.align {
+    text-align: center;    /* Aligns to center */
+}
+
+/* Text Decoration */
+.decoration {
+    text-decoration: line-through;
+}
+
+/* Text Transform */
+.transform {
+    text-transform: uppercase;      /* Converts text to ALL CAPS */
+}
+
+/* Text indent */
+.indent {
+    text-indent: 50px;      /* adds space at the beginning of paragraph */
+}
+
+/* Letter Spacing */
+.letter-spacing {
+    letter-spacing: 10px;       /* adds space between letters */
+}
+
+/* Word Spacing */
+.word-spacing {
+    word-spacing: 15px;     /* adds space between words */
+}
+
+/* Line Height */
+.line-height {
+    line-height: 4;     /* space between lines multiplies by 4 */
+}
+
+/* Text Shadow */
+.shadow {
+    text-shadow: 2px 2px 5px gray;      /* shadow behind text */
+}
+
+/* Font weight */
+.weight {
+    font-weight: bold;        /* makes text bold */
+}
+
+/* Font style */
+.style {
+    font-style: italic;        /* italic text */
+}
+
+/* Font Variant */
+.variant {
+    font-variant: small-caps;       /* converts text to small caps */
+}
+
+/* White-space handling */
+.whitespace {
+    white-space: nowrap;    /* prevents text from wrapping */
+}
+
+/* Overflow hidden with ellipsis */
+.ellipsis {
+  width: 200px;              /* fixed width */
+  white-space: nowrap;       /* single line only */
+  overflow: hidden;          /* hide overflow */
+  text-overflow: ellipsis;   /* show "..." at end */
+  border: 1px solid black;
+}
