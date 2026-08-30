@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+
+h2 {
+    color: crimson;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Common link styling */
+a{
+    text-decoration: none;      /* remove underline by default */
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* unvisited link */
+a:link {
+    color: darkblue;
+}
+
+/* visited link */
+a:visited {
+    color: purple;      /* color for visited links */
+}
+
+/* Hover state */
+a:hover {
+    color: red;       /* color when mouse hovers */
+    text-decoration: underline;     /* underline on hover */
+}
+
+/* Active state */
+a:active {
+    color: green;       /* color while being clicked */
+}
+
+/* Example: styled button-like link */
+.button-link {
+    color: white;
+    display: inline-block;
+    background-color: dodgerblue;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hover effect for button */
+.button-link:hover {
+    background-color: #0056b3;
+}
