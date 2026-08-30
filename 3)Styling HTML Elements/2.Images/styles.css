@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+
+h2 {
+    color: crimson;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;        /* put boxes in a row */
+    flex-wrap: wrap;        /* allow wrapping if too many boxes */
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Common Image Styling */
+img {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+/* 1. Image with width and height */
+.size {
+    width: 200px;
+    height: 150px;
+}
+
+/* 2. Image max-width (responsive) */
+.responsive {
+    max-width: 100%;        /* image scales with parent */
+    height: auto;       /* keeps aspect ratio */
+}
+
+/* 3. Image opacity */
+.opacity {
+  opacity: 0.75;               /* 75% transparent */
+}
+
+/* 4. Image hover effect */
+.hover:hover {
+  opacity: 0.8;               /* changes opacity on hover */
+  border: 3px solid red;      /* border changes on hover */
+}   
+
+/* 5. Image float left */
+.float-left {
+  float: left;                /* image floats to left */
+  margin-right: 20px;
+}
+
+/* 6. Image float right */
+.float-right {
+  float: right;               /* image floats to right */
+  margin-left: 20px;
+}
+
+/* 7. Image border radius (rounded corners) */
+.rounded {
+  border-radius: 15px;        /* rounded corners */
+}
+
+/* 8. Image circle */
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;         /* makes image circular */
+  object-fit: cover;          /* ensures image fits circle */
+}
+
+/* 9. Image filter (grayscale) */
+.grayscale {
+  filter: grayscale(100%);    /* converts image to black & white */
+}
+
+/* 10. Image filter (blur) */
+.blur {
+  filter: blur(5px);          /* blurs image */
+}
