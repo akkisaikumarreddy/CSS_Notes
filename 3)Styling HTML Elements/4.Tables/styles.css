@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Table borders */
+table, th, td {
+    border: 2px solid black;
+}
+
+/* Table header styling */
+th {
+    text-align: center;
+    color: darkblue;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+/* Table cell styling */
+td {
+    text-align: left;
+    padding: 12px;
+}
+
+/* Alternate row colors */
+tr :nth-child(even) {
+    background-color: lightgray;
+}
+
+tr :nth-child(odd) {
+    background-color: white;
+}
+
+/*  Hover effect on headers */
+th:hover {
+    background-color: lightsalmon;   /* light green when hovered */
+}
+
+/* Caption styling */
+caption {
+    caption-side: top; /* Table caption at top */
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* Columns width examples */
+.col1 {
+    width: 30%;
+}
+.col2 {
+    width: 40%;
+}
+
+.col3 {
+    width: 30%;
+}
