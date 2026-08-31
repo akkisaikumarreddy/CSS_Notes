@@ -1,0 +1,17 @@
+body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: lightgray;
+}
+
+.box {
+        width: 150px;
+        height: 150px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+}

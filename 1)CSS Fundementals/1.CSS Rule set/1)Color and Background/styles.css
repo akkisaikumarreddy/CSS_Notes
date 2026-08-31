@@ -1,0 +1,15 @@
+
+body {
+        color: darkblue;        /* for text color */
+        background-color: lightyellow;      /* solid background color */
+        background-image: url('Luffy.jpg');      /*replace with your image */
+        background-repeat: repeat-x;          /* repeats left to right */
+        background-size: auto;               /* image covers full page */
+        background-position: top;          /* image centered */
+}
+h1 {
+        color: darkred; /* heading text color */
+}
+p {
+        color: green;   /* paragraph text color */
+}     
