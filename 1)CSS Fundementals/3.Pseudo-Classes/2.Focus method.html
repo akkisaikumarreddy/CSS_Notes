@@ -1,82 +1,32 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Selector Example</title>
+    <style>
+        input:focus {
+            outline: none;
+            background-color: lightyellow;
+        }
 
-    <title>Set focus to HTML form element</title>
+        textarea:focus {
+            border: 2px solid green;
+        }
 
+        button:focus {
+            outline: 3px dashed red;
+        }
+    </style>
 </head>
-
 <body>
 
-    <h1>Set the focus to HTML form element using JavaScript</h1>
+    <h1>Focus Selector Demo</h1>
 
-    <p>To set focus to an HTML form element, there can be many methods that can be used to focus.Here we will discuss them all.</p>
-
-    <h2>Using Focus() method.</h2>
-
-    <p>Click on button to set focus on input field.</p>
-
-    <form>
-
-        <fieldset>
-         
-            <legend>User information</legend>
-
-            <label for="name">Name :</label>
-            <input type="text" id="name" name="name">  <br><br>
-
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email"> <br><br>
-
-            <button type="button" onclick="focusInput()">Set Focus</button>
-
-        </fieldset>
-
-    </form>
-
-    <script>
-        function focusInput() {
-            document.getElementById("email").focus();
-        } 
-    </script>
-    
-        <form>
-
-        <fieldset>
-         
-            <legend>User information</legend>
-
-            <label for="fname">First Name :</label>
-            <input type="text" id="fname" name="fname">  <br><br>
-
-            <label for="sname">Second Name :</label>
-            <input type="text" id="sname" name="sname">  <br><br>
-
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email"> <br><br>
-
-            <button type="button" onclick="focusInput()">Set Focus</button>
-
-        </fieldset>
-
-    </form>
-
-    <script>
-        // Automatically set focus when the page loads
-        window.onload = function() {
-            document.getElementById("fname").focus();
-        };
-
-        // Set focus when button is clicked
-        function focusInput() {
-            document.getElementById("fname").focus();
-        }
-    </script>
+    <input type="text" placeholder="Click or Tab here">
+    <br><br>
+    <textarea placeholder="Focus me"></textarea>
+    <br><br>
+    <button>Focus me</button>
 
 </body>
-
 </html>
