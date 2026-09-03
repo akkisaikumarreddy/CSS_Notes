@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+code {
+    background: #eee;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+}
+
+.container-center {
+    width: auto;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.container-start {
+    width: auto;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    justify-content: flex-start;  
+    align-items: flex-end;
+}
+
+
+.container-end {
+    width: auto;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    justify-content: flex-end;  
+    align-items: flex-start;
+}
+
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    font-size: 50px;
+    border: 1px solid white;
+}
+
+.container-space-between {
+    width: auto;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.container-space-around {
+    width: auto;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    justify-content: space-around;  
+    align-items: center;
+}
+
+.container-space-evenly {
+    width: auto;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    justify-content: space-evenly;  
+    align-items: center;
+}
+
+.container-flex-direction-row {
+    width: auto;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.container-flex-direction-column1 {
+    width: auto;
+    height: 650px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container-flex-direction-column2 {
+    width: auto;
+    height: 650px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+}
+
+.container-flex-direction-column3 {
+    width: auto;
+    height: 650px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-gap {
+    width: auto;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    justify-content: flex-start;  
+    gap: 10px;
+}
+
+.container-flex-nowrap {
+    width: 500px;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    justify-content: flex-start;  
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.container-flex-wrap {
+    width: 500px;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    justify-content: flex-start;  
+    gap: 10px;
+    flex-wrap: wrap;
+}

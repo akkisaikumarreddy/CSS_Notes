@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CSS - Flex</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Flex</h1>
+
+    <p>
+        Flexbox (CSS Flexible Box Layout) is a powerful one‑dimensional layout system that makes it easy to align, distribute, and resize elements along a row or column.<br>
+        It simplifies tasks like centering, equal spacing, and responsive resizing without complex floats or positioning.
+    </p>
+
+    <table>
+        <tr>
+            <th>Property</th>
+            <th>Values</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td><strong>flex-direction</strong></td>
+            <td><code>row</code> (default), <code>row-reverse</code>, <code>column</code>, <code>column-reverse</code></td>
+            <td>Defines the main axis direction.</td>
+        </tr>
+        <tr>
+            <td><strong>flex-wrap</strong></td>
+            <td><code>nowrap</code> (default), <code>wrap</code>, <code>wrap-reverse</code></td>
+            <td>Controls whether items wrap to new lines.</td>
+        </tr>
+        <tr>
+            <td><strong>flex-flow</strong></td>
+            <td>Shorthand: <code>flex-direction flex-wrap</code><br>Example: <code>flex-flow: row wrap;</code></td>
+            <td>Combines direction and wrapping in one property.</td>
+        </tr>
+        <tr>
+            <td><strong>justify-content</strong></td>
+            <td><code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>, <code>space-evenly</code></td>
+            <td>Aligns items along the main axis { x-axis }.</td>
+        </tr>
+        <tr>
+            <td><strong>align-items</strong></td>
+            <td><code>stretch</code> (default), <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code></td>
+            <td>Aligns items along the cross axis { y-axis }.</td>
+        </tr>
+        <tr>
+            <td><strong>align-content</strong></td>
+            <td><code>stretch</code>, <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code></td>
+            <td>Aligns multiple lines of flex items (when wrapping).</td>
+        </tr>
+        <tr>
+            <td><strong>gap</strong></td>
+            <td><code>&lt;length&gt;</code></td>
+            <td>Adds spacing between flex items.</td>
+        </tr>
+    </table>
+
+    <h2>Align-items , Justify-Content = Center</h2>
+
+    <div class="container-center">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div>
+
+    <div class="container-start">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div>
+
+    <div class="container-end">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div>
+
+
+    <div class="container-space-between">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div>
+
+    <div class="container-space-around">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div> 
+    
+    <div class="container-space-evenly">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div>    
+
+    <div class="container-flex-direction-row">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div>
+    
+    <div class="container-flex-direction-column1">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div>    
+
+    <div class="container-flex-direction-column2">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div> 
+
+    <div class="container-flex-direction-column3">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div> 
+
+    <div class="container-gap">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div>
+
+    <div class="container-flex-nowrap">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div>
+
+    <div class="container-flex-wrap">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+    </div>
+    
+</body>
+
+</html>
