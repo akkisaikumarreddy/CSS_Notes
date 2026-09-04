@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - Grid</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <p>
+        Now let's add 2 more elements and see what happens,<br>
+        These two boxes(Item 10 , Item 11) will be at down with very small and the layout is inconsistent.
+    </p>
+
+    <div class="grid-container-1">
+
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+
+    </div>
+
+    <p>To Fix this we need to prepare our grid by managing by automatic behavior</p>
+
+    <p>
+        What should the grid do to automatically ?<br>
+        For that we use <u>Grid-auto-rows</u> Property.<br>
+        Grid-auto-rows automatically controls the size of generated rows.
+    </p>
+    
+    <div class="grid-container-2-1">
+
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+
+    </div>
+
+    <p>lets apply <u>Grid-auto-columns</u> and <u>grid-auto-flow: column</u></p>
+
+    <div class="grid-container-2-2">
+
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+
+    </div>
+
+    <p>lets apply <u>Grid-auto-columns</u> and <u>grid-auto-flow: row</u></p>
+
+    <div class="grid-container-2-3">
+
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+        <div class="item">Item 11</div>
+
+    </div>
+
+</body>
+
+</html>
