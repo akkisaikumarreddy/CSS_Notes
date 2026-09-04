@@ -8,6 +8,15 @@ h1{
     text-align: center;
     font-weight: bold;
     background-color: aquamarine;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: crimson;
+    font-weight: bold;
+    font-style: italic;
+    margin: 15px;
 }
 
 table {
@@ -173,4 +182,118 @@ code {
     justify-content: flex-start;  
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.container-align-content-center {
+    width: 500px;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    gap: 10px;  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.container-align-content-space-between {
+    width: 500px;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    gap: 10px;  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+.container-align-content-space-around {
+    width: 500px;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    gap: 10px;  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.box-1 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    font-size: 50px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-box-1 {
+    width: 500px;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    display: flex;  /* Makes rows block to in-line */
+    gap: 10px;  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex-shrink {
+    width: 500px;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    gap: 10px;
+    display: flex;
+}
+
+.box-2 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    font-size: 50px;
+    border: 1px solid white;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex-grow {
+    width: 500px;
+    min-height: 500px;
+    margin: 20px;
+    border: 5px solid black;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-3 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    font-size: 50px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    flex-grow: 1;
 }
