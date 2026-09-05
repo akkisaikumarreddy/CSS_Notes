@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    margin: 40px;
+    font-size: 60px;
+    font-weight: bolder;
+    line-height: 100px;
+}
+
+.a {
+    background: linear-gradient(to right,#f32170, #ff6b08, #cf23cf, #eedd44);
+
+    /* Makes text transparent so gradient shows */
+    -webkit-text-fill-color: transparent;
+
+    /* Clips background to text */
+    -webkit-background-clip: text;
+}
+
+.b {
+    background: url(Animated_fire.gif) no-repeat center center;
+    background-size: cover;
+
+    /* Makes text transparent so gradient shows */
+    -webkit-text-fill-color: transparent;
+
+    /* Clips background to text */
+    -webkit-background-clip: text;
+}
