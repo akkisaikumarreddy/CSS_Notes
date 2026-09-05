@@ -1,0 +1,82 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    background-color: aquamarine;
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+h2 {
+    color: crimson;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#FFD3A5 , #FD6585);
+    margin: 30px;
+    border: none;
+    border-radius: 3px;
+}
+
+.transition-property-1:hover {
+    transition-property: width;
+    transition-duration: 2s;
+    width: 700px;
+}
+
+.transition-property-2:hover {
+    transition-property: height;
+    transition-duration: 0.8s;
+    height: 100px;
+}
+
+
+.duration:hover {
+    transition-duration: 5s;
+    background: green;
+}
+
+.timing-function-1:hover {
+    transition-timing-function: ease;
+    transition-duration: 5s;
+    width: 800px;
+}
+
+.timing-function-2:hover {
+    transition-timing-function: ease-in;
+    transition-duration: 5s;
+    width: 800px;
+}
+
+.timing-function-3:hover {
+    transition-timing-function: ease-in-out;
+    transition-duration: 5s;
+    width: 800px;
+}
+
+.timing-function-4:hover {
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+    width: 800px;
+}
+
+.delay-1:hover {
+    transition-property: width;
+    width: 500px;
+    transition-delay: 2s;
+}
+
+.delay-2:hover {
+    background: blueviolet;
+    transition-delay: 2s;
+}
