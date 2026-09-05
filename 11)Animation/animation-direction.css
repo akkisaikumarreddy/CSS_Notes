@@ -1,0 +1,83 @@
+@keyframes moveandcolor {
+    0% {
+        transform: translateX(0); 
+        background-color: #3b82f6;
+    }
+
+    50% {
+        transform: translateX(80px);
+        background-color: chartreuse;
+        border-radius: 25%;
+    }
+
+    100% {
+        transform: translate(350px , 350px);
+        background-color: #ef4444;
+        border-radius: 50%;
+    }
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    background: #f3f4f6;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 40px 10px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background-color:  #3b82f6;
+
+    /* Link to our keyframe definition */
+    animation-name: moveandcolor;
+
+    /* Required to see it move */
+    animation-duration: 6s;
+
+    /* Loop indefinitely. Can also be a number like 3 or 5 */
+    animation-iteration-count: infinite;
+
+    /* Plays forward, then plays in reverse, creating a smooth bounce effect */
+    animation-direction: alternate;
+}
+
+.box-1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background-color:  #3b82f6;
+
+    /* Link to our keyframe definition */
+    animation-name: moveandcolor;
+
+    /* Required to see it move */
+    animation-duration: 6s;
+
+    /* Loop indefinitely. Can also be a number like 3 or 5 */
+    animation-iteration-count: infinite;
+
+    animation-direction: reverse;
+}
+
+.box-2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background-color:  #3b82f6;
+
+    /* Link to our keyframe definition */
+    animation-name: moveandcolor;
+
+    /* Required to see it move */
+    animation-duration: 6s;
+
+    /* Loop indefinitely. Can also be a number like 3 or 5 */
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate-reverse;
+}
+
