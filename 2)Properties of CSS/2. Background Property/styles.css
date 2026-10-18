@@ -60,13 +60,25 @@ div {
 .bg-repeat-y {
     background-image: url("Mysore_Palace.jpg");
     background-repeat: repeat-y;
-    background-size: 50%;
+    background-size: 50%;    
 }
 
-/* 4. Background No Repeat */
+/* 4. Background No Repeat , Space , Round */
 .bg-no-repeat {
     background-image: url("Mysore_Palace.jpg");
     background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.bg-space {
+    background-image: url("Mysore_Palace.jpg");
+    background-repeat: space;
+    background-size: 50%;
+}
+
+.bg-round {
+    background-image: url("Mysore_Palace.jpg");
+    background-repeat: round;
     background-size: 50%;
 }
 
