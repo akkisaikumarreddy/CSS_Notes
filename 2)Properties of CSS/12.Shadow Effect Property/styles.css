@@ -94,3 +94,14 @@ h2 {
     color: white;
     text-shadow: 2px 2px 5px red;
 }
+
+.box7 {
+    color: red;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.box7:hover {
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+}

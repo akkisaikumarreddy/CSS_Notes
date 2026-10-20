@@ -172,3 +172,22 @@ div {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+/* BackGround Blend Mode  */
+.bg-blend-mode-multiply {
+    background-image: url("Mysore_Palace.jpg");
+    background-color: orange;
+    background-blend-mode: multiply;
+}
+
+.bg-blend-mode-overlay {
+    background-image: url("Mysore_Palace.jpg");
+    background-color: orange;
+    background-blend-mode: overlay;
+}
+
+.bg-blend-mode-screen {
+    background-image: url("Mysore_Palace.jpg");
+    background-color: orange;
+    background-blend-mode: screen;
+}
